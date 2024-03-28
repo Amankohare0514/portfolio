@@ -1,55 +1,47 @@
 import { useState } from 'react';
-
+import { ModeToggle } from './TogleButton';
+import MenuTwoToneIcon from '@mui/icons-material/MenuTwoTone';
+import Link from 'next/link';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-
   return (
-    <nav className="bg-transparent py-4">
+    <nav className="bg-transparent py-4 mt-4">
       <div className="max-w-screen-xl mx-auto px-4">
         <div className="w-full max-w-2xl mx-auto">
           <div className="flex justify-between items-center">
-            <div className="flex items-center">
-              <span className="text-gray-800 text-lg font-bold">Your Website</span>
+            <div className="flex justify-center items-center">
+              <Link href="/home" className="text-gray-800 dark:text-gray-200  text-lg font-bold">Aman();</Link>
             </div>
             <div className="hidden md:flex">
-              <a href="#" className="text-gray-800 mr-4">Home</a>
-              <a href="#" className="text-gray-800 mr-4">About</a>
-              <a href="#" className="text-gray-800 mr-4">Projects</a>
-              <a href="#" className="text-gray-800">Blog</a>
+              <div className='flex items-center justify-center'>
+              <Link href="/about" className="text-gray-800 dark:text-white mr-4">About</Link>
+              <Link href="/projects" className="text-gray-800 dark:text-white mr-4">Projects</Link>
+              <Link href="/experience" className="text-gray-800 dark:text-white mr-4">Experience</Link>
+              <Link href="/blogs" className="text-gray-800 dark:text-white mr-4">Blog</Link>
+              <ModeToggle />
+              </div>
             </div>
-            <div className="md:hidden">
+            <div className="md:hidden flex justify-center">
+              <ModeToggle />
               <button
                 onClick={toggleMenu}
-                className="text-gray-800 focus:outline-none focus:text-gray-800"
-              >
-                <svg
-                  className="h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4 6h16M4 12h16m-7 6h7"
-                  />
-                </svg>
+                className="text-gray-800 rounded-sm dark:text-gray-200 border py-1 px-2 ml-3" >
+                <MenuTwoToneIcon />
               </button>
             </div>
           </div>
         </div>
         {isOpen && (
-          <div className="md:hidden bg-gray-800 py-2">
-            <a href="#" className="block text-gray-800 py-2 px-4">Home</a>
-            <a href="#" className="block text-gray-800 py-2 px-4">About</a>
-            <a href="#" className="block text-gray-800 py-2 px-4">Projects</a>
-            <a href="#" className="block text-gray-800 py-2 px-4">Blog</a>
+          <div className="flex justify-end">
+            <div className="md:hidden py-3 bg-transparent px-8  dark:bg-transparent border rounded-md mt-2">
+              <Link href="/about" className="block text-gray-800 dark:text-gray-300 py-2">About</Link>
+              <Link href="/projects" className="block text-gray-800 dark:text-gray-300 py-1">Projects</Link>
+              <Link href="/experience" className="block text-gray-800 dark:text-gray-300 py-1">Experience</Link>
+              <Link href="/blogs" className="block text-gray-800 dark:text-gray-300 py-1">Blogs</Link>
+            </div>
           </div>
         )}
       </div>
