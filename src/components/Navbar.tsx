@@ -9,8 +9,8 @@ const Navbar = () => {
   };
   return (
     <nav className="bg-transparent py-4 mt-4">
-      <div className="max-w-screen-xl mx-auto px-4">
-        <div className="w-full max-w-2xl mx-auto">
+      <div className="max-w-screen-xl  mx-auto px-4">
+        <div className="w-full bg-transparent p-5 max-w-4xl mx-auto">
           <div className="flex justify-between items-center">
             <div className="flex justify-center items-center">
               <Link href="/home" className="text-gray-800 dark:text-gray-200  text-lg font-bold">Aman();</Link>

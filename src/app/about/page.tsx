@@ -4,7 +4,7 @@ import { Spotlight } from "@/components/ui/Spotlight";
 
 function About() {
   return (
-    <div className="h-[50rem] w-full rounded-md flex md:items-center md:justify-center antialiased bg-grid-white/[0.02] relative overflow-hidden">
+    <div className="h-[60rem]  md:h-[35rem] w-full rounded-md flex md:items-center md:justify-center antialiased bg-grid-white/[0.02] relative overflow-hidden">
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="white"
