@@ -1,3 +1,4 @@
+"use client"
 import { useState } from 'react';
 import { ModeToggle } from './TogleButton';
 import MenuTwoToneIcon from '@mui/icons-material/MenuTwoTone';
@@ -10,7 +11,7 @@ const Navbar = () => {
   return (
     <nav className="bg-transparent py-4 mt-4">
       <div className="max-w-screen-xl  mx-auto px-4">
-        <div className="w-full p-5 max-w-[1024px] mx-auto">
+        <div className="w-full p-5 max-w-[800px] mx-auto">
           <div className="flex justify-between items-center">
             <div className="flex justify-center items-center">
               <Link href="/home" className="text-gray-800 dark:text-gray-200  text-lg font-bold">Aman();</Link>

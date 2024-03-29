@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import { cn } from "@/lib/utils";
 import { Spotlight } from "@/components/ui/Spotlight";
@@ -9,7 +10,7 @@ function About() {
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="white"
       />
-      <div className="p-4 max-w-[1024px]  mx-auto relative z-10  w-full pt-20 md:pt-0">
+      <div className="p-4 max-w-[800px]  mx-auto relative z-10  w-full pt-20 md:pt-0">
         <h1 className="text-2xl md:text-3xl font-bold text-start bg-clip-text text-transparent bg-gradient-to-b from-gray-400 to-gray-500 bg-opacity-50">
           About
         </h1>

@@ -1,12 +1,13 @@
+"use client"
 import React from "react"
 function Experience() {
   return (
     <>
-      <section className="mt-6 font-sans p-4 text-gray-600 dark:text-gray-300 bg-transparent mx-auto max-w-[1024px]">
+      <section className="mt-6 font-sans p-4 text-gray-600 dark:text-gray-300 bg-transparent mx-auto max-w-[800px]">
         <h1 className="text-2xl md:text-3xl font-bold text-start bg-clip-text text-transparent bg-gradient-to-b from-gray-400 to-gray-500 bg-opacity-50">
           Experience
         </h1>
-        <div className="grid mt-6 md:grid-cols-3 gap-8 ">
+        <div className="grid mt-6 md:grid-cols-2 gap-8 ">
 
           {/* //first section */}
           <div className="border p-5">
@@ -48,26 +49,6 @@ function Experience() {
             </div>
           </div>
 
-          {/* //third section */}
-          <div className="border p-5">
-            <h3 className="text-xl font-semibold mb-2">
-              Web Developer at CodeClause  – Intern - Pune ,India
-            </h3>
-            <p className="mb-4">April 2023 – July 2023</p>
-            <ul className="list-disc pl-5 space-y-2">
-              <li>
-                Orchestrated the creation of static websites for clients, accompanied by the development of microservices
-                for seamlesswebsite operation.
-              </li>
-              <li>
-                Played a pivotal role in shaping architecture plans, UI designs, and feature development, contributing to
-                a 15% increase in project success rate.
-              </li>
-            </ul>
-            <div className="flex items-center space-x-2 mt-4">
-              <span className="text-gray-600 dark:text-gray-300"><a href="https://internship.codeclause.com/">CodeClause</a></span>
-            </div>
-          </div>
         </div>
       </section>
     </>

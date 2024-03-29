@@ -20,7 +20,7 @@ function Hero() {
     },
   ];
   return (
-    <div className="flex flex-col text-4xl items-center justify-center h-[35rem]  ">
+    <div className="flex flex-col text-4xl items-center justify-center h-[25rem]  ">
       <p className="text-neutral-600 dark:text-neutral-200 text-xl sm:text-3xl  ">
         Mern stack developer in India.
       </p>

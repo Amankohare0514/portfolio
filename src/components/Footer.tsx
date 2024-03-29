@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
