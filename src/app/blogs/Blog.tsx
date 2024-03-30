@@ -10,9 +10,9 @@ import {
 const Blog = () => {
   return (
     <div>
-        <div className="grid  grid-cols-1  md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-10 mx-auto max-w-[800px]">
+        <div className="grid md:p-0 p-4 grid-cols-1  md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-10 mx-auto max-w-[800px]">
         {BlogData.map((item, index) => (
-          <Card className="bg-transparent border font-sans  p-4 max-w-xl transition-transform transform hover:scale-95 cursor-pointer w-full rounded-2xl">
+          <Card className="bg-transparent border font-sans p-2 max-w-xl transition-transform transform hover:scale-95 cursor-pointer w-full rounded-2xl">
             <CardMedia
               component="img"
               alt="blog"

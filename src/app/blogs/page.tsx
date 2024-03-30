@@ -9,7 +9,7 @@ const Blogs = () => {
         <h1 className="text-2xl  md:text-3xl font-bold text-center mb-6 bg-clip-text text-transparent bg-gradient-to-b from-gray-400 to-gray-500 bg-opacity-50">
           Blogs
         </h1>
-        <div className="flex font-sans justify-center mb-8  items-center mt-8 ">
+        <div className="flex font-sans justify-center mb-6  items-center mt-8">
           <div className="w-full  max-w-[800px] md:w-[800px] rounded-lg bg-slate-50  dark:bg-gray-900 text-white  p-4 shadow-md mx-4 md:mx-0">
             <div className="flex items-center space-x-2">
               <PushPinIcon className="text-gray-800 dark:text-gray-700" />

@@ -59,9 +59,8 @@ const Project = () => {
       <h1 className="text-2xl font-bold md:text-3xl  text-center bg-clip-text text-transparent bg-gradient-to-b from-gray-400 to-gray-500 bg-opacity-50">
         Projects
       </h1>
-      <section className="container font-sans mx-auto px-4 py-8" style={{ maxWidth: '800px' }}>
-        {/* pinned */}
-        <div className="flex justify-center mb-8  items-center">
+       {/* pinned */}
+        <div className="flex justify-center mt-8  items-center">
           <div className="w-full  max-w-[800px] md:w-[800px] rounded-lg bg-slate-50  dark:bg-gray-900 text-white  p-4 shadow-md mx-4 md:mx-0">
             <div className="flex items-center space-x-2">
               <PushPinIcon className="text-gray-800 dark:text-gray-700" />
@@ -75,6 +74,7 @@ const Project = () => {
             </p>
           </div>
         </div>
+      <section className="container font-sans mx-auto px-4 py-8 max-w-[800px]" >
         <div className="max-w-[800px] mx-auto">
           <div className="flex justify-center items-center mb-4">
             <input
