@@ -3,10 +3,10 @@ import React from "react"
 function Experience() {
   return (
     <>
-      <section className="mt-6 font-sans p-4 text-gray-600 dark:text-gray-300 bg-transparent mx-auto max-w-[800px]">
-        <h1 className="text-2xl md:text-3xl font-bold text-start bg-clip-text text-transparent bg-gradient-to-b from-gray-400 to-gray-500 bg-opacity-50">
-          Experience
-        </h1>
+      <h1 className="text-2xl md:text-3xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-gray-400 to-gray-500 bg-opacity-50">
+        Experience
+      </h1>
+      <section className="font-sans p-4 text-gray-600 dark:text-gray-300 bg-transparent mx-auto max-w-[800px]">
         <div className="grid mt-6 md:grid-cols-2 gap-8 ">
 
           {/* //first section */}

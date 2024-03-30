@@ -19,7 +19,7 @@ function Education() {
             {skills.map((skill, index) => (
               <button
                 key={index}
-                className="m-1 py-2 px-4 bg-transparent dark:hover:text-white hover:text-black text-gray-400 font-semibold border hover:border-gray-900 border-gray-800 rounded-lg"
+                className="m-1 py-1 px-3 bg-transparent dark:hover:text-white hover:text-black font-sans text-gray-500 font-semibold border hover:border-gray-900 border-gray-800 rounded-lg"
               >
                 {skill}
               </button>

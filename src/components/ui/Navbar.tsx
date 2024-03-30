@@ -1,6 +1,6 @@
 "use client"
 import { useState } from 'react';
-import { ModeToggle } from './TogleButton';
+import { ModeToggle } from '../TogleButton';
 import MenuTwoToneIcon from '@mui/icons-material/MenuTwoTone';
 import Link from 'next/link';
 const Navbar = () => {
@@ -14,7 +14,7 @@ const Navbar = () => {
         <div className="w-full p-5 max-w-[800px] mx-auto">
           <div className="flex justify-between items-center">
             <div className="flex justify-center items-center">
-              <Link href="/home" className="text-gray-800 dark:text-gray-200  text-lg font-bold">Aman();</Link>
+              <Link href="/" className="text-gray-800 dark:text-gray-200  text-lg font-bold">Aman();</Link>
             </div>
             <div className="hidden md:flex">
               <div className='flex items-center justify-center'>

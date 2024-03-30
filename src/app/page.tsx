@@ -1,7 +1,7 @@
 "use client"
 import { NextUIProvider } from '@nextui-org/react';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
+import Navbar from '@/components/ui/Navbar';
+import Footer from '@/components/ui/Footer';
 import Hero from './home/page';
 import About from './about/page';
 import Blogs from './blogs/page';
@@ -13,7 +13,6 @@ export default function Home() {
   return (
     <>
       <NextUIProvider>
-        <Navbar />
         <Hero />
         <About />
         <Skills/>
@@ -21,7 +20,6 @@ export default function Home() {
         {/* <Experience /> */}
         {/* <Blogs /> */}
         {/* <Projects/> */}
-        <Footer />
       </NextUIProvider>
     </>
   );

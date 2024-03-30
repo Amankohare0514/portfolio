@@ -10,9 +10,9 @@ import {
 const Blog = () => {
   return (
     <div>
-        <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-10 mx-auto max-w-[800px]">
+        <div className="grid  grid-cols-1  md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-10 mx-auto max-w-[800px]">
         {BlogData.map((item, index) => (
-          <Card className="bg-transparent border  p-4 max-w-xl transition-transform transform hover:scale-95 cursor-pointer w-full rounded-2xl">
+          <Card className="bg-transparent border font-sans  p-4 max-w-xl transition-transform transform hover:scale-95 cursor-pointer w-full rounded-2xl">
             <CardMedia
               component="img"
               alt="blog"
@@ -20,10 +20,10 @@ const Blog = () => {
               image={item.image}
             />
             <CardContent>
-              <Typography  variant="h5"  sx={{ fontWeight: 'bold' }} className='text-2xl pb-2 text-gray-800 dark:text-gray-300 font-bold'>
+              <Typography  variant="h6"  sx={{ fontWeight: 'bold' }} className='text-lg pb-2 font-sans text-gray-800 dark:text-gray-300 font-bold'>
                 {item.title}
               </Typography>
-              <Typography variant="h6"  sx={{ fontSize: '1.2rem' }} color='gray'>
+              <Typography variant="h6"  sx={{ fontSize: '1rem' }}  className='font-sans text-gray-500'>
                 {item.description}
               </Typography>
             </CardContent>

@@ -12,7 +12,7 @@ function About() {
       />
       <div className="p-4 max-w-[800px]  mx-auto relative z-10  w-full pt-20 md:pt-0">
         <h1 className="text-2xl md:text-3xl font-bold text-start bg-clip-text text-transparent bg-gradient-to-b from-gray-400 to-gray-500 bg-opacity-50">
-          About
+          About me
         </h1>
         <p className="mt-4 font-normal text-base  text-neutral-600 dark:text-neutral-300 max-w-[1024px] text-start mx-auto">
           I'm a Mern Stack developer in India. I am creative and passionate about design and technology so I always try to craft great-looking software products. Pursuing a Bachelor of Technology (B.Tech) in Information Technology from Barkatullah University, Bhopal.
