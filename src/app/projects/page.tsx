@@ -2,7 +2,7 @@
 // components/ProjectSection.js
 import React, { useState } from 'react';
 import ProjectCard from './ProjectCard';
-
+import PushPinIcon from '@mui/icons-material/PushPin';
 const projects = [
   {
     id: 1,
@@ -43,7 +43,7 @@ const projects = [
   {
     id: 7,
     title: 'Quiz-App',
-    description: 'A Quiz-App clone offering an engaging and interactive platform for users to test their knowledge.',
+    description: 'A Quiz-App offering an engaging and interactive platform for users to test their knowledge.',
     githubLink: 'https://github.com/project2',
   },
 ];
@@ -58,12 +58,28 @@ const Project = () => {
   return (
     <section className="container mx-auto px-4 py-8" style={{ maxWidth: '800px' }}>
       <h2 className="text-3xl font-bold text-center mb-8">Projects</h2>
+
+      {/* pinned */}
+      <div className="flex justify-center mb-8  items-center mt-8 ">
+        <div className="w-full  max-w-[800px] md:w-[800px] rounded-lg bg-slate-50  dark:bg-gray-900 text-white  p-4 shadow-md mx-4 md:mx-0">
+          <div className="flex items-center space-x-2">
+            <PushPinIcon className="text-gray-800 dark:text-gray-700" />
+            <span className="font-semibold">Pinned</span>
+          </div>
+          <p className="mt-2 text-gray-800 dark:text-gray-400">
+          Hey there! Hey there! You can check out more projects developed by me by visiting my GitHub profile. Thanks and here is  {" "}
+            <a target='_blank' className="text-sky-500 hover:underline" href="https://github.com/amankohare0514">
+            github
+            </a>
+          </p>
+        </div>
+      </div>
       <div className="max-w-[800px] mx-auto">
         <div className="flex justify-center items-center mb-4">
           <input
             type="text"
             placeholder="Search projects name"
-            className="px-2 py-2 w-[400px] bg-transparent  rounded-md border focus:outline-none focus:border-blue-500"
+            className="px-2 py-2 w-[400px] bg-transparent text-black  rounded-md border focus:outline-none focus:border-blue-500"
             value={searchTerm}
             onChange={e => setSearchTerm(e.target.value)}
           />

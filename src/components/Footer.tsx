@@ -8,7 +8,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 export default function Footer() {
   return (
     <footer className="py-8">
-      <div className="max-w-2xl mx-auto px-4">
+      <div className="max-w-[800px] mx-auto px-4">
         <div className="flex justify-between items-center mt-4 border-t pt-8">
           <div className="flex flex-col font-semibold space-y-2">
             <a href="/" className="text-gray-500 hover:text-gray-700"> Home</a>

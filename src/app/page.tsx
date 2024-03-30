@@ -14,15 +14,15 @@ export default function Home() {
     <>
       <NextUIProvider>
         <Navbar />
-        <Hero/>
-        <About/>
-        {/* <Blogs/> */}
-        {/* <Skills/> */}
+        <Hero />
+        <About />
+        <Skills/>
+        <Education />
+        {/* <Experience /> */}
+        {/* <Blogs /> */}
         {/* <Projects/> */}
-        <Experience/>
-        <Education/>
+        <Footer />
       </NextUIProvider>
-      <Footer />
     </>
   );
 }
