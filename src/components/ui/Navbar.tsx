@@ -36,8 +36,8 @@ const Navbar = () => {
           </div>
         </div>
         {isOpen && (
-          <div className="flex justify-end">
-            <div className="md:hidden py-3 bg-transparent px-8  dark:bg-transparent border rounded-md mt-2">
+        <div className="flex fixed right-6  bg-transparent justify-end backdrop-blur-xl">
+            <div className="md:hidden py-3 bg-transparent px-4  dark:bg-transparent border rounded-md ">
               <Link href="/about" className="block text-gray-800 dark:text-gray-300 py-2">About</Link>
               <Link href="/projects" className="block text-gray-800 dark:text-gray-300 py-1">Projects</Link>
               <Link href="/experience" className="block text-gray-800 dark:text-gray-300 py-1">Experience</Link>

@@ -1,5 +1,4 @@
 "use client"
-// components/ProjectSection.js
 import React, { useState } from 'react';
 import ProjectCard from './ProjectCard';
 import PushPinIcon from '@mui/icons-material/PushPin';

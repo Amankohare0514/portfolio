@@ -3,7 +3,7 @@ import React from "react";
 import { cn } from "@/lib/utils";
 import { Spotlight } from "@/components/ui/Spotlight";
 import skills from "./SkillData";
-function Education() {
+function Skill() {
   return (
     <div className="mt-6  w-full rounded-md flex md:items-center md:justify-center antialiased bg-grid-white/[0.02] relative overflow-hidden">
       <Spotlight
@@ -19,7 +19,7 @@ function Education() {
             {skills.map((skill, index) => (
               <button
                 key={index}
-                className="m-1 py-1 px-3 bg-transparent dark:hover:text-white hover:text-black font-sans text-gray-500 font-semibold border hover:border-gray-900 border-gray-800 rounded-lg"
+                className="m-1 py-1 px-3 font-sans bg-transparent dark:hover:text-white hover:text-black  text-gray-500 dark:text-gray-300 font-semibold border hover:border-gray-900 border-gray-800 rounded-lg"
               >
                 {skill}
               </button>
@@ -31,4 +31,4 @@ function Education() {
   );
 }
 
-export default Education
+export default Skill
