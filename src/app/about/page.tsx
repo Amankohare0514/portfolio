@@ -12,10 +12,20 @@ function About() {
           fill="white"
         />
         <div className="p-4 max-w-[800px]  mx-auto relative z-10  w-full md:pt-0">
-          <h1 className="text-2xl md:text-3xl font-bold text-start bg-clip-text text-transparent bg-gradient-to-b from-gray-400 to-gray-500 bg-opacity-50">
+          <h1 className="text-2xl font-bold md:text-3xl  text-center bg-clip-text text-transparent bg-gradient-to-b from-sky-500 to-sky-600 bg-opacity-50">
             About me
           </h1>
-          <p className="mt-4 font-normal text-base  text-neutral-600 dark:text-neutral-300 max-w-[1024px] text-start mx-auto">
+          <div className='w-full mt-4 h-auto mx-auto max-h-300 border lg:max-w-[800px]'>
+            <img
+              src="https://i.ibb.co/xGndn56/aman.jpg"
+              alt="Aman Koahre"
+              className="w-full h-auto mx-auto mt-2 mb-2 max-h-300  lg:max-w-[500px]"
+            />
+          </div>
+          <p className="mt-6 font-normal text-base  text-neutral-600 dark:text-neutral-300 max-w-[1024px] text-start mx-auto">
+          <span className="text-xl font-bold md:text-3xl  text-center bg-clip-text text-transparent bg-gradient-to-b from-sky-500 to-sky-600 bg-opacity-50">
+           Who I Am
+          </span> <br /> <br />
             I'm a Mern Stack developer in India. I am creative and passionate about design and technology so I always try to craft great-looking software products. Pursuing a Bachelor of Technology (B.Tech) in Information Technology from Barkatullah University, Bhopal.
             <br />
             <br />

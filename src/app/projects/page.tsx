@@ -56,7 +56,7 @@ const Project = () => {
 
   return (
     <>
-      <h1 className="text-2xl font-bold md:text-3xl  text-center bg-clip-text text-transparent bg-gradient-to-b from-gray-400 to-gray-500 bg-opacity-50">
+      <h1 className="text-2xl font-bold md:text-3xl  text-center bg-clip-text text-transparent bg-gradient-to-b from-sky-500 to-sky-600 bg-opacity-50">
         Projects
       </h1>
        {/* pinned */}

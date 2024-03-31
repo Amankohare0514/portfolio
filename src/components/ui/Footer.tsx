@@ -18,34 +18,34 @@ export default function Footer() {
       <div className="max-w-[800px] mx-auto px-4">
         <div className="flex justify-between items-center mt-4 border-t pt-8">
           <div className="flex justify-center flex-col font-semibold space-y-2">
-            <a href="/" className="text-gray-500 justify-center  hover:text-gray-700"><HomeIcon /> Home</a>
-            <a href='/about' className="text-gray-500 justify-center  hover:text-gray-700"><Person2Icon /> About</a>
-            <a href="/projects" className="text-gray-500 justify-center  hover:text-gray-700"> <AddBoxIcon /> Project</a>
-            <a href="/experience" className="text-gray-500 justify-center  hover:text-gray-700"><BarChartIcon /> Experience</a>
+            <a href="/" className="text-gray-900 justify-center  dark:text-gray-200"><HomeIcon /> Home</a>
+            <a href='/about' className="text-gray-900 justify-center  dark:text-gray-200"><Person2Icon /> About</a>
+            <a href="/projects" className="text-gray-900 justify-center  dark:text-gray-200"> <AddBoxIcon /> Project</a>
+            <a href="/experience" className="text-gray-900 justify-center  dark:text-gray-200"><BarChartIcon /> Experience</a>
           </div>
-          <div className="flex flex-col font-semibold space-y-2">
-            <a href="/blogs" className="text-gray-500 hover:text-gray-700"><MenuBookIcon /> Blog</a>
-            <a href="/skills" className="text-gray-500 hover:text-gray-700"><BatteryCharging60Icon/> Skills</a>
-            <a href="/contact" className="text-gray-500 hover:text-gray-700"> <CallIcon/> Contact</a>
-            <a href="#" className="text-gray-500 hover:text-gray-700"><LibraryBooksIcon /> My resume</a>
+          <div className="flex flex-col  space-y-2">
+            <a href="/blogs" className="text-gray-900 dark:text-gray-200 "><MenuBookIcon /> Blog</a>
+            <a href="/skills" className="text-gray-900 dark:text-gray-200"><BatteryCharging60Icon/> Skills</a>
+            <a href="/contact" className="text-gray-900 dark:text-gray-200"> <CallIcon/> Contact</a>
+            <a href="#" className="text-gray-900 dark:text-gray-200"><LibraryBooksIcon /> My resume</a>
           </div>
-          <div className="flex flex-col font-semibold space-y-2">
-          <a className="text-gray-500 hover:text-gray-700" href="https://github.com/Amankohare0514">
+          <div className="flex flex-col  space-y-2">
+          <a className="text-gray-900 dark:text-gray-200" href="https://github.com/Amankohare0514">
               <GitHubIcon className="h-6 w-6" /> Github
             </a>
-            <a className="text-gray-500 hover:text-gray-700" href="https://www.instagram.com/aman__0514/">
+            <a className="text-gray-900 dark:text-gray-200" href="https://www.instagram.com/aman__0514/">
               <InstagramIcon className="h-6 w-6" /> Instagram
             </a>
-            <a className="text-gray-500 hover:text-gray-700" href="https://twitter.com/Aman__0514">
+            <a className="text-gray-900 dark:text-gray-200" href="https://twitter.com/Aman__0514">
               <TwitterIcon className="h-6 w-6" /> Twitter
             </a>
-            <a className="text-gray-500 hover:text-gray-700" href="https://www.linkedin.com/in/aman-kohare-3a0678235/">
+            <a className="text-gray-900 dark:text-gray-200" href="https://www.linkedin.com/in/aman-kohare-3a0678235/">
               <LinkedInIcon className="h-6 w-6" /> Linkedin
             </a>
           </div>
         </div>
         <div className="flex justify-between items-center border-t  py-4 mt-4">
-          <span className="text-gray-500 hover:text-black dark:hover:text-white"><a href='#'>© 2024 aman kohare</a></span>
+          <span className="text-gray-900 dark:text-gray-200"><a href='#'>© 2024 aman kohare</a></span>
         </div>
       </div>
     </footer>

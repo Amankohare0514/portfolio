@@ -11,7 +11,7 @@ function Skill() {
         fill="white"
       />
       <div className="p-4 max-w-[800px]  mx-auto relative w-full">
-        <h1 className="text-2xl md:text-3xl font-bold text-start bg-clip-text text-transparent bg-gradient-to-b from-gray-400 to-gray-500 bg-opacity-50">
+        <h1 className="text-2xl md:text-3xl font-bold text-start bg-clip-text text-transparent bg-gradient-to-b from-sky-500 to-sky-600 bg-opacity-50">
           Skill
         </h1>
         <div className="mx-auto mt-4 w-full">
