@@ -4,14 +4,15 @@ import Hero from './home/page';
 import About from './about/page';
 import Education from './education/page';
 import Skill from './skills/page';
-
+import Contact from "./contact/page"
 export default function Home() {
   return (
     <>
       <NextUIProvider>
-        <Hero />
+        {/* <Hero />
         <Skill/>
-        <Education />
+        <Education /> */}
+        <Contact/>
       </NextUIProvider>
     </>
   );
