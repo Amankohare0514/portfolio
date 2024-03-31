@@ -27,7 +27,7 @@ export default function Footer() {
             <a href="/blogs" className="text-gray-900 dark:text-gray-200 "><MenuBookIcon /> Blog</a>
             <a href="/skills" className="text-gray-900 dark:text-gray-200"><BatteryCharging60Icon/> Skills</a>
             <a href="/contact" className="text-gray-900 dark:text-gray-200"> <CallIcon/> Contact</a>
-            <a href="#" className="text-gray-900 dark:text-gray-200"><LibraryBooksIcon /> My resume</a>
+            <a href="/resume.pdf" download className="text-gray-900 dark:text-gray-200"><LibraryBooksIcon /> My resume</a>
           </div>
           <div className="flex flex-col  space-y-2">
           <a className="text-gray-900 dark:text-gray-200" href="https://github.com/Amankohare0514">

@@ -29,7 +29,7 @@ const Navbar = () => {
               <ModeToggle />
               <button
                 onClick={toggleMenu}
-                className="text-gray-800 rounded-sm dark:text-gray-200 border py-1 px-2 ml-3" >
+                className="text-gray-800 rounded-sm dark:text-gray-200 border py-1 px-2 ml-2" >
                 <MenuTwoToneIcon />
               </button>
             </div>
