@@ -9,7 +9,7 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <nav className=" py-4 mt-4">
+    <nav className="py-4 mt-4">
       <div className="max-w-screen-xl mx-auto px-4">
         <div className="w-full p-5 max-w-[800px] mx-auto">
           <div className="flex justify-between items-center">
