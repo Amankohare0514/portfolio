@@ -17,7 +17,7 @@ export default function Footer() {
     <footer className="py-8 font-sans">
       <div className="max-w-[800px] mx-auto px-4">
         <div className="flex justify-between items-center mt-4 border-t pt-8">
-          <div className="flex justify-center flex-col font-semibold space-y-2">
+          <div className="flex justify-center flex-col space-y-2">
             <a href="/" className="text-gray-900 justify-center  dark:text-gray-200"><HomeIcon /> Home</a>
             <a href='/about' className="text-gray-900 justify-center  dark:text-gray-200"><Person2Icon /> About</a>
             <a href="/projects" className="text-gray-900 justify-center  dark:text-gray-200"> <AddBoxIcon /> Project</a>

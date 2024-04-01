@@ -12,7 +12,7 @@ const TopBlog = () => {
     const limitedBlogData = BlogData.slice(0, 2);
 
     return (
-        <div className="p-4 max-w-[800px]  mx-auto relative w-full">
+        <div className="p-0 md:p-4 max-w-[800px]  mx-auto relative w-full">
             <h1 className="text-xl mb-4 md:text-3xl font-bold text-start bg-clip-text text-transparent bg-gradient-to-b from-sky-500 to-sky-600 bg-opacity-50">
                 Top blogs
             </h1>
