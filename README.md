@@ -1,6 +1,6 @@
 #personal portfolio 
 
-[helloaman.vercel.app]
+ [live](http://helloaman.vercel.app)
 
 ## Getting Started
 
