@@ -6,15 +6,22 @@ import Skill from "../skills/page";
 function About() {
   return (
     <>
-      <div className="font-sans w-full rounded-md flex md:items-center md:justify-center antialiased bg-grid-white/[0.02] relative overflow-hidden">
+      <div className="font-sans  w-full rounded-md flex md:items-center md:justify-center antialiased bg-grid-white/[0.02] relative overflow-hidden">
         <Spotlight
           className="-top-40 left-0 md:left-60 0"
           fill="white"
         />
-        <div className="p-4 max-w-[800px] mx-auto relative z-10 w-full md:pt-0">
-          <h1 className="text-xl font-bold md:text-3xl text-center bg-clip-text text-transparent bg-gradient-to-b from-sky-500 to-sky-600 bg-opacity-50">
+        <div className="p-4 max-w-[800px]  mx-auto relative z-10  w-full md:pt-0">
+          <h1 className="text-xl font-bold md:text-3xl  text-center bg-clip-text text-transparent bg-gradient-to-b from-sky-500 to-sky-600 bg-opacity-50">
             About me
           </h1>
+          <div className='w-full mt-4 h-auto mx-auto max-h-300 border lg:max-w-[800px]'>
+            <img
+              src="https://i.ibb.co/xGndn56/aman.jpg"
+              alt="Aman Koahre"
+              className="w-full h-auto mx-auto mt-2 mb-2 max-h-300  lg:max-w-[500px]"
+            />
+          </div>
           <p className="mt-6 font-normal text-base text-neutral-600 dark:text-neutral-300 max-w-[1024px] text-start mx-auto">
             <span className="text-xl font-bold md:text-3xl text-center bg-clip-text text-transparent bg-gradient-to-b from-sky-500 to-sky-600 bg-opacity-50">
               Who I Am
@@ -37,4 +44,4 @@ function About() {
   );
 }
 
-export default About;
+export default About
