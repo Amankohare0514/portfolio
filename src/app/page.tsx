@@ -5,14 +5,17 @@ import Education from './education/page';
 import Skill from './skills/page';
 import Contact from './contact/page';
 import { Toaster } from 'sonner';
+import TopBlog from './blogs/topblogs';
+import TopProject from './projects/topproject';
 export default function Home() {
   return (
     <>
       <NextUIProvider>
-        <Toaster/>
+        <Toaster />
         <Hero />
         <Skill />
-        <Education />
+        <TopBlog />
+        <TopProject />
         <Contact />
       </NextUIProvider>
     </>

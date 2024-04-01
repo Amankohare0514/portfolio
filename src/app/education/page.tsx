@@ -11,7 +11,7 @@ function Education() {
                 fill="white"
             />
             <div className="p-4 max-w-[800px]  mx-auto relative w-full">
-                <h1 className="text-2xl md:text-3xl font-bold text-start bg-clip-text text-transparent bg-gradient-to-b from-sky-500 to-sky-600 bg-opacity-50">
+                <h1 className="text-xl md:text-3xl font-bold text-start bg-clip-text text-transparent bg-gradient-to-b from-sky-500 to-sky-600 bg-opacity-50">
                     Education
                 </h1>
                 <p className="mt-4 font-normal font-sans text-base  text-neutral-600 dark:text-neutral-300 max-w-[800px] text-start mx-auto">
@@ -24,5 +24,4 @@ function Education() {
         </div>
     );
 }
-
 export default Education

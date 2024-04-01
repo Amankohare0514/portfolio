@@ -2,50 +2,7 @@
 import React, { useState } from 'react';
 import ProjectCard from './ProjectCard';
 import PushPinIcon from '@mui/icons-material/PushPin';
-const projects = [
-  {
-    id: 1,
-    title: 'Reform',
-    description: 'Create and share beautiful form with Webflow s user-friendly prototype feature.',
-    githubLink: 'https://github.com/project1',
-  },
-  {
-    id: 2,
-    title: 'My tube',
-    description: 'Led the development of My_tube, an innovative YouTube clone. ',
-    githubLink: 'https://github.com/project2',
-  },
-  {
-    id: 3,
-    title: 'Student management system',
-    description: 'Engineered a resilient system for seamless control: effortlessly read, update, and delete.',
-    githubLink: 'https://github.com/project2',
-  },
-  {
-    id: 4,
-    title: 'Github finder',
-    description: 'GitHub Finder, a web app, simplifies searching for GitHub accounts and repositories. ',
-    githubLink: 'https://github.com/project2',
-  },
-  {
-    id: 5,
-    title: 'Right Draw',
-    description: 'This platform is designed for crafting whiteboards and infinite canvas experiences. ',
-    githubLink: 'https://github.com/project2',
-  },
-  {
-    id: 6,
-    title: 'IMDB Clone',
-    description: 'An IMDb clone, providing a comprehensive database of films, TV shows, and celebrities.',
-    githubLink: 'https://github.com/project2',
-  },
-  {
-    id: 7,
-    title: 'Quiz-App',
-    description: 'A Quiz-App offering an engaging and interactive platform for users to test their knowledge.',
-    githubLink: 'https://github.com/project2',
-  },
-];
+import projects from './projects';
 
 const Project = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -56,7 +13,7 @@ const Project = () => {
 
   return (
     <>
-      <h1 className="text-2xl font-bold md:text-3xl  text-center bg-clip-text text-transparent bg-gradient-to-b from-sky-500 to-sky-600 bg-opacity-50">
+      <h1 className="text-xl font-bold md:text-3xl  text-center bg-clip-text text-transparent bg-gradient-to-b from-sky-500 to-sky-600 bg-opacity-50">
         Projects
       </h1>
        {/* pinned */}

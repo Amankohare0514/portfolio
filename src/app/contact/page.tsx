@@ -2,7 +2,6 @@
 import { useState } from 'react';
 import emailjs from 'emailjs-com';
 import { toast } from 'sonner';
-
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -27,7 +26,7 @@ const Contact = () => {
         e.target,
         'c0lf2uMPzW6yI9Fwh'
       );
-      toast.success('Form submitted successfully');
+      toast.success('message send successfully');
 
       setFormData({
         name: '',
@@ -43,9 +42,20 @@ const Contact = () => {
 
   return (
     <div className="p-4 mt-8 max-w-[800px]  mx-auto relative w-full">
-      <h1 className="text-2xl md:text-3xl font-bold text-start bg-clip-text text-transparent bg-gradient-to-b from-sky-500 to-sky-600 bg-opacity-50">
+      <h1 className="text-xl md:text-3xl font-bold text-start bg-clip-text text-transparent bg-gradient-to-b from-sky-500 to-sky-600 bg-opacity-50">
         Contact me
       </h1>
+      <div className="max-w-[800px] mt-6 h-[160px] p-6 border rounded-lg flex items-center">
+        <div className="flex-grow mt-4">
+          <h2 className="text-2xl font-semibold mb-2 ">Email: amankohare@gmail.com</h2>
+          <p className="mb-4">Phone: +91 6268518514</p>
+          <button className="mb-4 h-10 w-28 border" >
+            <a href="/resume.pdf" download> Resume</a>
+          </button>
+        </div>
+     
+      </div>
+
       <form onSubmit={handleSubmit} className="max-w-[800px] mx-auto mt-8">
         <div className="mb-4 w-full">
           <label htmlFor="name" className="block mb-2 text-sm font-semibold">Name</label>
@@ -87,6 +97,7 @@ const Contact = () => {
         </div>
         <button type="submit" className="bg-gray-900 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-300">Send Message</button>
       </form>
+     
     </div>
   );
 };
