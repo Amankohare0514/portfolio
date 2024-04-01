@@ -6,7 +6,7 @@ import Skill from "../skills/page";
 function About() {
   return (
     <>
-      <div className="font-sans  w-full rounded-md flex md:items-center md:justify-center antialiased bg-grid-white/[0.02] relative overflow-hidden">
+      <div className="font-sans mt-8  w-full rounded-md flex md:items-center md:justify-center antialiased bg-grid-white/[0.02] relative overflow-hidden">
         <Spotlight
           className="-top-40 left-0 md:left-60 0"
           fill="white"

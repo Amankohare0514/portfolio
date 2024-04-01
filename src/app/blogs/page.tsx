@@ -6,7 +6,7 @@ const Blogs = () => {
   return (
     <>
       <div>
-        <h1 className="text-xl  md:text-3xl font-bold text-center mb-6 bg-clip-text text-transparent bg-gradient-to-b from-sky-500 to-sky-600 bg-opacity-50">
+        <h1 className="text-xl mt-6  md:text-3xl font-bold text-center mb-6 bg-clip-text text-transparent bg-gradient-to-b from-sky-500 to-sky-600 bg-opacity-50">
           Blogs
         </h1>
         <div className="flex font-sans justify-center mb-6  items-center mt-8">

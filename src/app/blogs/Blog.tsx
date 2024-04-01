@@ -4,7 +4,7 @@ import BlogData from './BlogData'
 const Blog = () => {
   return (
     <div>
-<div className="grid md:p-0 p-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 mx-auto max-w-[800px]">
+<div className="grid mt-6 md:p-0 p-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 mx-auto max-w-[800px]">
   {BlogData.map((item, index) => (
     <div key={index} className="max-w-sm p-4 border rounded-xl overflow-hidden  transition-transform duration-300 hover:scale-95">
       <img className="w-full" src={item.image} alt="blog image" />
