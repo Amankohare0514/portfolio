@@ -3,6 +3,7 @@ import React from "react";
 import { cn } from "@/lib/utils";
 import { Spotlight } from "@/components/ui/Spotlight";
 import Skill from "../skills/page";
+import Image from "next/image";
 function About() {
   return (
     <>
@@ -16,7 +17,7 @@ function About() {
             About me
           </h1>
           <div className='w-full mt-4 h-auto mx-auto max-h-300 border lg:max-w-[800px]'>
-            <img
+            <Image
               src="https://i.ibb.co/xGndn56/aman.jpg"
               alt="Aman Koahre"
               className="w-full h-auto mx-auto mt-2 mb-2 max-h-300  lg:max-w-[500px]"
