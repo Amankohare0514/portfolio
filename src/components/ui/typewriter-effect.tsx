@@ -2,7 +2,9 @@
 
 import { cn } from "@/lib/utils";
 import { motion, stagger, useAnimate, useInView } from "framer-motion";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+
+
 
 export const TypewriterEffect = ({
   words,
@@ -110,6 +112,17 @@ export const TypewriterEffectSmooth = ({
   className?: string;
   cursorClassName?: string;
 }) => {
+
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
+
+
   // split text inside of words into array of characters
   const wordsArray = words.map((word) => {
     return {
