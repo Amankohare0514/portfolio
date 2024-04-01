@@ -26,13 +26,13 @@ function About() {
           <p className="mt-6 font-normal text-base  text-neutral-600 dark:text-neutral-300 max-w-[1024px] text-start mx-auto">
             <span className="text-xl font-bold md:text-3xl  text-center bg-clip-text text-transparent bg-gradient-to-b from-sky-500 to-sky-600 bg-opacity-50">
               Who I Am
-            </span> <br /> <br />
+            </span> <br /> 
             I'm a Mern Stack developer in India. I am creative and passionate about design and technology so I always try to craft great-looking software products. Pursuing a Bachelor of Technology (B.Tech) in Information Technology from Barkatullah University, Bhopal.
             <br />
-            <br />
+           
             Programming Journey: I'm a self-taught programmer on a quest to explore the exciting world of technology. My creative spirit is matched only by my dedication to design and technology. This combination of skills and enthusiasm makes me a valuable asset in the dynamic field of web development.
             <br />
-            <br />
+          
             When not coding, I like to watch TV shows and movies, play some games with friends or hang out with them. I'm also listening to music most of the time. According to Spotify Wrapped, I listened to 989 minutes of music in 2023 and 3047 in 2022. <br /><br />And last but not least, please don't hesitate to contact me!
             <br />
             A keen interest in playing Cricket.
