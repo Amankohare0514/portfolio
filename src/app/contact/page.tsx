@@ -49,7 +49,7 @@ const Contact = () => {
         <div className="flex-grow mt-4">
           <h2 className="text-2xl font-semibold mb-2 ">Email: amankohare@gmail.com</h2>
           <p className="mb-4">Phone: +91 6268518514</p>
-          <button className="mb-4 h-10 w-28 border" >
+          <button className="mb-6 h-10  w-28 border" >
             <a href="/resume.pdf" download> Resume</a>
           </button>
         </div>

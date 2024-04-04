@@ -12,7 +12,7 @@ const TopProject = () => {
             </h1>
           
                 {limitedProjectData.map((item, index) => (
-                     <div key={index} className="flex flex-col mt-3 justify-between p-6 bg-transparent border shadow-md rounded-lg md:h-[120px] h-[140px] max-w-[800px] transition-transform duration-300 hover:scale-95">
+                     <div key={index} className="flex flex-col mt-3 justify-between p-6 bg-transparent border shadow-md rounded-lg md:h-[120px] h-[150px] max-w-[800px] transition-transform duration-300 hover:scale-95">
                      <div className="flex justify-between">
                        <div>
                          <h3 className="text-xl text-gray-600 dark:text-gray-500 font-semibold mb-2">{item.title}</h3>
