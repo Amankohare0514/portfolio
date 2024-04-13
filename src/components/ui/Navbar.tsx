@@ -8,9 +8,7 @@ import { useTheme } from "next-themes";
 const Navbar = () => {
   const { theme, setTheme } = useTheme();
   const router = useRouter();
-
   const [mounted, setMounted] = useState(false);
-
   const Links = [
     { name: "home", link: "/" },
     { name: "about", link: "/about" },
@@ -50,7 +48,6 @@ const Navbar = () => {
   };
 
   useOutsideAlerter(touchRef);
-
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 70) {
