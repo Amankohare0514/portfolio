@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import ProjectCard from './ProjectCard';
 import PushPinIcon from '@mui/icons-material/PushPin';
 import projects from './projects';
-
+import SearchIcon from '@mui/icons-material/Search';
 const Project = () => {
   const [searchTerm, setSearchTerm] = useState('');
 

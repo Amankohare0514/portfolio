@@ -23,7 +23,9 @@ function Hero() {
   ];
   return (
     <>
-      <div className="flex flex-col text-4xl items-center justify-center h-[25rem]  ">
+      <div className="flex flex-col text-4xl items-center justify-center h-[28rem]">
+        <div className="circleposition bg-[#902db4] rounded-[100%] absolute top-[50%] left-[50%] translate-x-[-50%]  translate-y-[-120%] blur-[90px] h-[300px] w-[200px]"></div>
+        <div className="circleposition bg-[#ee8340] rounded-[100%] absolute  top-[50%] left-[60%] translate-x-[-50%]  translate-y-[-50%] blur-[90px] h-[300px] w-[100px]"></div>
         <p className="text-neutral-600 dark:text-neutral-200 text-xl sm:text-3xl  ">
           Mern stack developer in India.
         </p>
@@ -51,9 +53,10 @@ function Hero() {
            I am currently learning full stack development.
           </p>
         </div>
-      </div>
+       </div>
     </>
   );
 }
 
 export default Hero
+
