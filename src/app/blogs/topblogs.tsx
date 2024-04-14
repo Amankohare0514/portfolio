@@ -12,11 +12,11 @@ const TopBlog = () => {
     const limitedBlogData = BlogData.slice(0, 2);
 
     return (
-        <div className="p-0 md:p-4 max-w-[800px]  mx-auto relative w-full">
-            <h1 className="text-xl mb-4 md:text-3xl font-bold text-start bg-clip-text text-transparent bg-gradient-to-b from-sky-500 to-sky-600 bg-opacity-50">
-                Top blogs
+        <div className="p-4 md:p-4 max-w-[800px]  mx-auto relative w-full">
+          <h1 className="text-xl mb-4 md:text-3xl font-bold text-start bg-clip-text text-transparent bg-gradient-to-b from-sky-500 to-sky-600 bg-opacity-50">
+                Top Blogs
             </h1>
-            <div className="grid md:p-0 p-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 mx-auto max-w-[800px]">
+            <div className="grid md:p-0  grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 mx-auto max-w-[800px]">
                 {limitedBlogData.map((item, index) => (
                     <div key={index} className="max-w-sm p-4 border rounded-xl overflow-hidden  transition-transform duration-300 hover:scale-95">
                         <img className="w-full" src={item.image} alt="blog image" />
