@@ -45,13 +45,10 @@ const Contact = () => {
       <h1 className="text-xl md:text-3xl font-bold text-start bg-clip-text text-transparent bg-gradient-to-b from-sky-500 to-sky-600 bg-opacity-50">
         Contact me
       </h1>
-      <div className="max-w-[800px] mt-6 h-[160px] p-6 border rounded-lg flex items-center">
+      <div className="max-w-[800px] mt-6 h-[110px] p-6 border rounded-lg flex items-center">
         <div className="flex-grow mt-4">
           <h2 className="text-2xl font-semibold mb-2 ">Email: amankohare@gmail.com</h2>
           <p className="mb-4">Phone: +91 6268518514</p>
-          <button className="mb-6 h-10  w-28 border" >
-            <a href="/resume.pdf" download> Resume</a>
-          </button>
         </div>
      
       </div>
