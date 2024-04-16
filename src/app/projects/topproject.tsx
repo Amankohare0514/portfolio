@@ -1,8 +1,8 @@
 import React from 'react';
 import projects from './projects';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 const TopProject = () => {
-    // Get only the first two blog items
     const limitedProjectData = projects.slice(0, 2);
 
     return (
@@ -18,14 +18,24 @@ const TopProject = () => {
                          <h3 className="text-xl text-gray-600 dark:text-gray-500 font-semibold mb-2">{item.title}</h3>
                          <p className="text-gray-600 dark:text-gray-300 mb-4">{item.description}</p>
                        </div>
+                       <div className='flex items-center'>
                        <a
                          href={item.githubLink}
                          target="_blank"
                          rel="noopener noreferrer"
-                         className="flex items-center"
+                         className='ml-2 hover:text-red-600'
                        >
                          <GitHubIcon />
                        </a>
+                       <a
+                         href={item.liveLink}
+                         target="_blank"
+                         rel="noopener noreferrer" 
+                         className='ml-2 hover:text-red-600'
+                       >
+                         < OpenInNewIcon/>
+                       </a>
+                       </div>
                      </div>
                    </div>
                 ))}

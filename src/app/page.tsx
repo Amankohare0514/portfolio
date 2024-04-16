@@ -1,4 +1,5 @@
 "use client"
+import "./globals.css";
 import { NextUIProvider } from '@nextui-org/react';
 import Hero from './home/page';
 import Skill from './skills/page';
