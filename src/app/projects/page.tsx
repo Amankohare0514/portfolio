@@ -17,8 +17,8 @@ const Project = () => {
         Projects
       </h1>
        {/* pinned */}
-        <div className="flex justify-center mt-8  items-center">
-          <div className="w-full  max-w-[800px] md:w-[800px] rounded-lg bg-slate-50  dark:bg-gray-900 text-white  p-4 shadow-md mx-4 md:mx-0">
+        <div className="flex justify-center mt-8 items-center">
+          <div className="w-full  max-w-[800px]  rounded-lg bg-slate-50  dark:bg-gray-900 text-white  p-4 shadow-md mx-4 md:mx-0">
             <div className="flex items-center space-x-2">
               <PushPinIcon className="text-gray-800 dark:text-gray-700" />
               <span className="font-semibold">Pinned</span>

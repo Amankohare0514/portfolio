@@ -7,28 +7,28 @@ export default function Footer() {
       <div className="max-w-[800px] mx-auto px-4">
         <div className="flex justify-between items-center mt-4 border-t pt-8">
           <div className="flex justify-center flex-col space-y-2">
-            <a href="/" className="text-gray-900 justify-center  dark:text-gray-200"> Home</a>
-            <a href='/about' className="text-gray-900 justify-center  dark:text-gray-200">About</a>
-            <a href="/projects" className="text-gray-900 justify-center  dark:text-gray-200"> Project</a>
-            <a href="/experience" className="text-gray-900 justify-center  dark:text-gray-200">Experience</a>
+            <a href="/" className="text-gray-900 justify-center hover:text-gray-500 hover:dark:text-gray-200 dark:text-gray-300"> Home</a>
+            <a href='/about' className="text-gray-900 justify-center hover:text-gray-500 hover:dark:text-gray-200 dark:text-gray-300">About</a>
+            <a href="/projects" className="text-gray-900 justify-center hover:text-gray-500 hover:dark:text-gray-200 dark:text-gray-300"> Project</a>
+            <a href="/experience" className="text-gray-900 justify-center hover:text-gray-500 hover:dark:text-gray-200 dark:text-gray-300">Experience</a>
           </div>
           <div className="flex flex-col  space-y-2">
-            <a href="/blogs" className="text-gray-900 dark:text-gray-200 "> Blog</a>
-            <a href="/skills" className="text-gray-900 dark:text-gray-200"> Skills</a>
-            <a href="/contact" className="text-gray-900 dark:text-gray-200">  Contact</a>
-            <a href="/resume.pdf" download className="text-gray-900 dark:text-gray-200"> My resume</a>
+            <a href="/blogs" className="text-gray-900 hover:text-gray-500 hover:dark:text-gray-200 dark:text-gray-300"> Blog</a>
+            <a href="/skills" className="text-gray-900 justify-center hover:text-gray-500 hover:dark:text-gray-200 dark:text-gray-300"> Skills</a>
+            <a href="/contact" className="text-gray-900 justify-center hover:text-gray-500 hover:dark:text-gray-200 dark:text-gray-300">  Contact</a>
+            <a href="/resume.pdf" download className="text-gray-900 justify-center hover:text-gray-500 hover:dark:text-gray-200 dark:text-gray-300"> My resume</a>
           </div>
           <div className="flex flex-col  space-y-2">
-            <a className="text-gray-900 dark:text-gray-200" href="https://github.com/Amankohare0514">
+            <a className="text-gray-900 justify-center hover:text-gray-500 hover:dark:text-gray-200 dark:text-gray-300" href="https://github.com/Amankohare0514">
               Github
             </a>
-            <a className="text-gray-900 dark:text-gray-200" href="https://www.instagram.com/aman__0514/">
+            <a className="text-gray-900 justify-center hover:text-gray-500 hover:dark:text-gray-200 dark:text-gray-300" href="https://www.instagram.com/aman__0514/">
               Instagram
             </a>
-            <a className="text-gray-900 dark:text-gray-200" href="https://twitter.com/Aman__0514">
+            <a className="text-gray-900 justify-center hover:text-gray-500 hover:dark:text-gray-200 dark:text-gray-300" href="https://twitter.com/Aman__0514">
               Twitter
             </a>
-            <a className="text-gray-900 dark:text-gray-200" href="https://www.linkedin.com/in/aman-kohare-3a0678235/">
+            <a className="text-gray-900 justify-center hover:text-gray-500 hover:dark:text-gray-200 dark:text-gray-300" href="https://www.linkedin.com/in/aman-kohare-3a0678235/">
               Linkedin
             </a>
           </div>
