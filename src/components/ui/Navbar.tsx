@@ -10,11 +10,11 @@ const Navbar = () => {
   const router = useRouter();
   const [mounted, setMounted] = useState(false);
   const Links = [
-    { name: "home", link: "/" },
-    { name: "about", link: "/about" },
-    { name: "projects", link: "/projects" },
-    { name: "experience", link: "/experience" },
-    { name: "blogs", link: "/blogs" },
+    { name: "Home", link: "/" },
+    { name: "About", link: "/about" },
+    { name: "Projects", link: "/projects" },
+    { name: "Experience", link: "/experience" },
+    { name: "Blogs", link: "/blogs" },
   ];
 
   const [isScrolled, setIsScrolled] = useState(false);
