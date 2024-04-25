@@ -8,15 +8,12 @@ function About() {
   return (
     <>
       <div className="font-sans mt-8  w-full rounded-md flex md:items-center md:justify-center antialiased bg-grid-white/[0.02] relative overflow-hidden">
-        <Spotlight
-          className="-top-40 left-0 md:left-60 0"
-          fill="white"
-        />
+        <Spotlight className="-top-40 left-0 md:left-60 0" fill="white" />
         <div className="p-4 max-w-[800px]  mx-auto relative z-10  w-full md:pt-0">
           <h1 className="text-xl font-bold md:text-3xl  text-center bg-clip-text text-transparent bg-gradient-to-b from-sky-500 to-sky-600 bg-opacity-50">
             About me
           </h1>
-          <div className='w-full mt-4 h-auto mx-auto max-h-300 border lg:max-w-[800px]'>
+          <div className="w-full mt-4 h-auto mx-auto max-h-300 border lg:max-w-[800px]">
             <img
               src="https://i.ibb.co/xGndn56/aman.jpg"
               alt="Aman Koahre"
@@ -27,15 +24,44 @@ function About() {
             <span className="text-xl font-bold md:text-3xl text-center bg-clip-text text-transparent bg-gradient-to-b from-sky-500 to-sky-600 bg-opacity-50">
               Who I Am
             </span>
-          <div className="mt-4 font-normal text-base text-neutral-600 dark:text-neutral-300 max-w-[1024px] text-start mx-auto">
-          <TextGenerateEffect words={words} />
-          </div>
+            <div className="mt-4 font-normal text-base text-neutral-600 dark:text-neutral-300 max-w-[1024px] text-start mx-auto">
+              <TextGenerateEffect words={words} />
+            </div>
+            <div className="flex justify-start flex-col mt-8  text-lg">
+              {/* Instagram */}
+              <a
+                href="https://www.instagram.com/aman__0514/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 hover:underline"
+              >
+                Instagram
+              </a>
+              {/* Twitter */}
+              <a
+                href="https://twitter.com/Aman__0514"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 hover:underline"
+              >
+                Twitter
+              </a>
+              {/* GitHub */}
+              <a
+                href="https://github.com/Amankohare0514"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 hover:underline"
+              >
+                GitHub
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </>
   );
-}
+}  
 
 export default About
 
