@@ -1,5 +1,12 @@
 const projects = [
   {
+    id: 0,
+    title: 'Techloom Solutions Pvt. Ltd',
+    description: 'Elevate Your Online Presence with Techloom Solutions',
+    githubLink: "https://github.com/Amankohare0514",
+    liveLink: "https://techloomsolutions.tech/",
+  },
+  {
     id: 1,
     title: 'Reform',
     description: 'Create and share beautiful form with Webflow s user-friendly prototype feature.',
@@ -8,7 +15,7 @@ const projects = [
   },
   {
     id: 2,
-    title: 'My tube',
+    title: 'My Tube',
     description: 'Led the development of My_tube, an innovative YouTube clone. ',
     githubLink: "https://github.com/Amankohare0514/my_tube",
     liveLink: "https://my-tube-new.vercel.app/",
@@ -16,14 +23,14 @@ const projects = [
 
   {
     id: 3,
-    title: 'Student management system',
+    title: 'Student Management System',
     description: 'Engineered a resilient system for seamless control: effortlessly read, update, and delete.',
     githubLink: "https://github.com/Amankohare0514/Student_Management-System",
     liveLink: "https://student-management-software.vercel.app/",
   },
   {
     id: 4,
-    title: 'Github finder',
+    title: 'Github Finder',
     description: 'GitHub Finder, a web app, simplifies searching for GitHub accounts and repositories. ',
     githubLink: "https://github.com/Amankohare0514/Github-Finder-with-styling",
     liveLink: "",
