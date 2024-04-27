@@ -1,10 +1,10 @@
 "use client"
 const BlogData = [
     {
-      title: "How to make a Resume For Freshers!",
-      description: "Creating a resume as a fresher can be challenging because you likely have limited work experience...",
-      link: "https://medium.com/@amankohare/how-to-make-a-greate-resume-for-freshers-93913d82263a",
-      image: "https://wallpaperaccess.com/full/4689415.png"
+      title: "Introducing Next.js: Unveiling Exciting New Features",
+      description: "Welcome to the next chapter in web development with Next.js! With every iteration...",
+      link: "https://medium.com/@amankohare/introducing-next-js-unveiling-exciting-new-features-374bb4830b83",
+      image: "https://www.nextjs.cn/static/images/nextjs-big-logo.png"
     },
     {
       title: "Connect Html form with Gmail using php.",
