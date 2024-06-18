@@ -23,7 +23,6 @@ const Blogs = () => {
             </p>
           </div>
         </div>
-
         <Blog />
       </div>
     </>
