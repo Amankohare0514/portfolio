@@ -16,7 +16,7 @@ function Experience() {
           Nextopson.in
           </h2>
           <p className="text-neutral-600 dark:text-neutral-400 text-sm">
-           App developer - <span>[May 2023 - present]</span>
+           App developer - Bhopal, india <span>[May 2023 - present]</span>
           </p>
           <p>
             Developed and Implemented Marketing Strategies: Spearheaded innovative marketing campaigns, resulting in a 30% increase in customer acquisition within the first quarter.
@@ -28,7 +28,7 @@ function Experience() {
             Techloom Solutions Pvt Ltd.
           </h2>
           <p className="text-neutral-600 dark:text-neutral-400 text-sm">
-            Co-Founder - <span>[Apr 2023 - present]</span>
+            web developer - Remote, india <span>[Sep 2023 - March 2024]</span>
           </p>
           <p>
             At Techloom solutions, we're not just another tech company – we're your partners in progress. With a relentless commitment to excellence and a passion for innovation, we specialize in crafting bespoke solutions that exceed expectations. <br />
@@ -39,7 +39,7 @@ function Experience() {
             Salesqueen Software Solutions
           </h2>
           <p className="text-neutral-600 dark:text-neutral-400 text-sm">
-            Intern - Chennai, India - <span>[Nov 2023 - feb 2024]</span>
+            Intern - Remote, India - <span>[June 2023 - Aug 2023]</span>
           </p>
           <p>
             Led the end-to-end development of a responsive website withHTML, CSS, and JavaScript, boosting responsiveness by 25%. <br />
