@@ -7,10 +7,10 @@ const BlogData = [
       image: "https://www.nextjs.cn/static/images/nextjs-big-logo.png"
     },
     {
-      title: "Connect Html form with Gmail using php.",
-      description: "To connect an HTML form with Gmail, you can use a server-side programming language like PHP to...",
-      link: "https://medium.com/@amankohare/connect-html-form-with-gmail-using-php-a7067baccd04",
-      image: "https://ak5.picdn.net/shutterstock/videos/27007675/thumb/8.jpg"
+      title: "10 tools that developers across various domains and technologies may find useful",
+      description: "list of 10 tools that developers across various domains and technologies may find useful..",
+      link: "https://medium.com/@amankohare/10-tools-that-developers-across-various-domains-and-technologies-may-find-useful-05c52d5699ee",
+      image: "https://miro.medium.com/v2/resize:fit:828/format:webp/1*o-9_yixE54wupUv1F5365A.jpeg"
     },
     {
       title: "How to deploy website on vercel?",
