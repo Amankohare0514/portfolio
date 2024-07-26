@@ -15,7 +15,7 @@ function About() {
           </h1>
           <div className="w-full mt-4 h-auto mx-auto max-h-300 border lg:max-w-[800px]">
             <img
-              src="https://i.ibb.co/xGndn56/aman.jpg"
+              src="https://heyaman.vercel.app/static/media/aman.842c793b15d3d928b477.jpg"
               alt="Aman Koahre"
               className="w-full h-auto mx-auto mt-2 mb-2 max-h-300  lg:max-w-[500px]"
             />
