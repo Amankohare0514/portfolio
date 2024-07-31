@@ -14,8 +14,8 @@ export default function Home() {
         <Toaster />
         <Hero />
         <Skill />
-        <TopBlog />
         <TopProject />
+        <TopBlog />
         <Contact />
       </NextUIProvider>
     </>

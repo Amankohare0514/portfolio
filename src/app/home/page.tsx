@@ -1,5 +1,5 @@
 "use client";
-import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect"
+import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
 import { Spotlight } from "@/components/ui/Spotlight";
 import Link from "next/link";
 function Hero() {
