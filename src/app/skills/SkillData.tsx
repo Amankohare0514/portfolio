@@ -4,6 +4,6 @@ const skills = [
     "Next.js", "Node.js", "Express.js", "React Native",
     "MongoDB", "Firebase", "Tailwind", "Bootstrap",
     "Vercel", "Netlify", "Redux", "Sanity.io", "Linux", "Canva",
-    "Figma", "Github", "C++",
+    "Figma", "Github",
 ];
 export default skills

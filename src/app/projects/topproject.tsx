@@ -2,6 +2,8 @@ import React from 'react';
 import projects from './projects';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import ArrowRightIcon from '@mui/icons-material/ArrowRight';
+import Link from 'next/link';
 const TopProject = () => {
     const limitedProjectData = projects.slice(0, 2);
 
@@ -39,6 +41,11 @@ const TopProject = () => {
                      </div>
                    </div>
                 ))}
+                <Link href="/projects">
+                <p className='text-right mt-6 font-mono '>
+                More<ArrowRightIcon className="text-gray-800 dark:text-gray-700" />
+                </p>
+                </Link>
             </div>
     )
 }

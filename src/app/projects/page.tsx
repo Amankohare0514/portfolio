@@ -21,7 +21,7 @@ const Project = () => {
           <div className="w-full  max-w-[800px]  rounded-lg bg-slate-50  dark:bg-gray-900 text-white  p-4 shadow-md mx-4 md:mx-0">
             <div className="flex items-center space-x-2">
               <PushPinIcon className="text-gray-800 dark:text-gray-700" />
-              <span className="font-semibold">Pinned</span>
+              <span className="font-semibold text-gray-700 dark:text-gray-500">Pinned</span>
             </div>
             <p className="mt-2 text-gray-800 dark:text-gray-400">
               Hey there! Hey there! You can check out more projects developed by me by visiting my GitHub profile. Thanks and here is  {" "}
