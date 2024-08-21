@@ -13,10 +13,24 @@ function Experience() {
           </p>
           <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
           <h2 className="font-medium text-xl mb-1 tracking-tighter">
+          Dhakad Technosoft Private Limited
+          </h2>
+          <p className="text-neutral-600 dark:text-neutral-400 text-sm">
+           React Native developer - Indore, india <span>[Aug 2024 - present]</span>
+          </p>
+          <p>
+          Dhakad Technosoft is a rapidly growing, new generation IT company with extensive experience in designing and developing cutting edge custom software solutions and e-Business solutions. 
+            <br />
+            We develop robust Mobile and web solutions that transform businesses into online management tools. 
+            We are a group of highly motivated IT professionals with ability to innovate and a strong desire to excel. 
+            From start ups to established businesses, we help people transform their mobile and web presence into an asset by creating competitive advantages through e-strategy, development, rapid deployment, and continuous management.
+          </p>
+          <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
+          <h2 className="font-medium text-xl mb-1 tracking-tighter">
           Nextopson.in
           </h2>
           <p className="text-neutral-600 dark:text-neutral-400 text-sm">
-           App developer - Bhopal, india <span>[May 2023 - present]</span>
+           App developer - Bhopal, india <span>[May 2024 - Aug 2024]</span>
           </p>
           <p>
             Developed and Implemented Marketing Strategies: Spearheaded innovative marketing campaigns, resulting in a 30% increase in customer acquisition within the first quarter.
