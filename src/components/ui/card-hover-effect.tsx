@@ -32,11 +32,12 @@ export const HoverEffect = ({
                     className="relative group block p-2 h-full w-full"
                     onMouseEnter={() => setHoveredIndex(idx)}
                     onMouseLeave={() => setHoveredIndex(null)}
+                    key={idx} // Add a unique key prop here
                 >
                     <AnimatePresence>
                         {hoveredIndex === idx && (
                             <motion.span
-                                className="absolute inset-0 h-full w-full  bg-neutral-100 dark:bg-gray-900/[0.8] block rounded-3xl"
+                                className="absolute inset-0 h-full w-full bg-neutral-100 dark:bg-gray-900/[0.8] block rounded-3xl"
                                 layoutId="hoverBackground"
                                 initial={{ opacity: 0 }}
                                 animate={{
@@ -55,7 +56,7 @@ export const HoverEffect = ({
                             <img
                                 src={item.image}
                                 alt={item.title}
-                                className="object-contain border  w-full h-full rounded-lg"
+                                className="object-contain border w-full h-full rounded-lg"
                             />
                         </CardMedia>
                         <CardTitle>{item.title}</CardTitle>
@@ -68,7 +69,6 @@ export const HoverEffect = ({
                                 <IconExternalLink className="mt-4" />
                             </Link>
                         </div>
-
                     </Card>
                 </div>
             ))}
