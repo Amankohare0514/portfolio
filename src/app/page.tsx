@@ -5,8 +5,8 @@ import Hero from './home/page';
 import Skill from './skills/page';
 import Contact from './contact/page';
 import { Toaster } from 'sonner';
-import TopBlog from './blogs/topblogs';
 import TopProject from './projects/topproject';
+import Experience from "./experience/page";
 export default function Home() {
   return (
     <>
@@ -15,8 +15,7 @@ export default function Home() {
         <Hero />
         <Skill />
         <TopProject />
-        <TopBlog />
-        <Contact />
+        <Experience />
       </NextUIProvider>
     </>
   );

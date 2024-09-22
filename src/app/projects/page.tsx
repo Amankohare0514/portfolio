@@ -16,21 +16,7 @@ const Project = () => {
       <h1 className="text-xl mt-8 font-bold md:text-3xl  text-center bg-clip-text text-transparent bg-gradient-to-b from-sky-500 to-sky-600 bg-opacity-50">
         Projects
       </h1>
-       {/* pinned */}
-        <div className="flex justify-center mt-8 items-center">
-          <div className="w-full  max-w-[800px]  rounded-lg bg-slate-50  dark:bg-gray-900 text-white  p-4 shadow-md mx-4 md:mx-0">
-            <div className="flex items-center space-x-2">
-              <PushPinIcon className="text-gray-800 dark:text-gray-700" />
-              <span className="font-semibold text-gray-700 dark:text-gray-500">Pinned</span>
-            </div>
-            <p className="mt-2 text-gray-800 dark:text-gray-400">
-              Hey there! Hey there! You can check out more projects developed by me by visiting my GitHub profile. Thanks and here is  {" "}
-              <a target='_blank' className="text-sky-500 hover:underline" href="https://github.com/amankohare0514">
-                github
-              </a>
-            </p>
-          </div>
-        </div>
+ 
       <section className="container font-sans mx-auto px-4 py-8 max-w-[800px]" >
         <div className="max-w-[800px] mx-auto">
           <div className="flex justify-center items-center mb-4">
