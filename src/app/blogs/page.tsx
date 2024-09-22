@@ -1,30 +1,14 @@
-// "use client"
-// import * as React from 'react';
-// import PushPinIcon from '@mui/icons-material/PushPin';
-// import Blog from './Blog';
-// const Blogs = () => {
-//   return (
-//     <>
-//       <div>
-//         <h1 className="text-xl mt-8  md:text-3xl font-bold text-center mb-6 bg-clip-text text-transparent bg-gradient-to-b from-sky-500 to-sky-600 bg-opacity-50">
-//           Blogs
-//         </h1>
-//         <Blog />
-//       </div>
-//     </>
-//   );
-// };
-
-// export default Blogs;
 
 "use client";
 import Image from "next/image";
 import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/components/ui/use-outside-click";
+import CloseIcon from "./CloseIcon";
+import Cards from "./BlogData";
 
 function Blogs() {
-  const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
+  const [active, setActive] = useState<(typeof Cards)[number] | boolean | null>(
     null
   );
   const id = useId();
@@ -148,7 +132,7 @@ function Blogs() {
         ) : null}
       </AnimatePresence>
       <ul className="max-w-[800px] mt-8 mx-auto w-full grid grid-cols-1 md:grid-cols-2 items-start gap-4">
-        {cards.map((card, index) => (
+        {Cards.map((card, index) => (
           <motion.div
             layoutId={`card-${card.title}-${id}`}
             key={card.title}
@@ -188,128 +172,4 @@ function Blogs() {
 }
 export default Blogs
 
-export const CloseIcon = () => {
-  return (
-    <motion.svg
-      initial={{
-        opacity: 0,
-      }}
-      animate={{
-        opacity: 1,
-      }}
-      exit={{
-        opacity: 0,
-        transition: {
-          duration: 0.05,
-        },
-      }}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className="h-4 w-4 text-black"
-    >
-      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M18 6l-12 12" />
-      <path d="M6 6l12 12" />
-    </motion.svg>
-  );
-};
 
-const cards = [
-  {
-    description: "Welcome to the next chapter in web development with Next.js! With every iteration...",
-    title: "Introducing Next.js: Unveiling Exciting New Features",
-    src: "/blogs/next.png",
-    ctaText: "Visit",
-    ctaLink: "https://medium.com/@amankohare/introducing-next-js-unveiling-exciting-new-features-374bb4830b83",
-    content: () => {
-      return (
-        <p>
-          Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-          her melancholic and cinematic music style. Born Elizabeth Woolridge
-          Grant in New York City, she has captivated audiences worldwide with
-          her haunting voice and introspective lyrics. <br /> <br /> Her songs
-          often explore themes of tragic romance, glamour, and melancholia,
-          drawing inspiration from both contemporary and vintage pop culture.
-          With a career that has seen numerous critically acclaimed albums, Lana
-          Del Rey has established herself as a unique and influential figure in
-          the music industry, earning a dedicated fan base and numerous
-          accolades.
-        </p>
-      );
-    },
-  },
-  {
-    description: "list of 10 tools that developers across various domains and technologies may find useful..",
-    title: "10 tools that developers across various domains and technologies may find useful",
-    src: "/blogs/tools.jpeg",
-    ctaText: "Visit",
-    ctaLink: "https://medium.com/@amankohare/10-tools-that-developers-across-various-domains-and-technologies-may-find-useful-05c52d5699ee",
-    content: () => {
-      return (
-        <p>
-          Babu Maan, a legendary Punjabi singer, is renowned for his soulful
-          voice and profound lyrics that resonate deeply with his audience. Born
-          in the village of Khant Maanpur in Punjab, India, he has become a
-          cultural icon in the Punjabi music industry. <br /> <br /> His songs
-          often reflect the struggles and triumphs of everyday life, capturing
-          the essence of Punjabi culture and traditions. With a career spanning
-          over two decades, Babu Maan has released numerous hit albums and
-          singles that have garnered him a massive fan following both in India
-          and abroad.
-        </p>
-      );
-    },
-  },
-
-  {
-    description: "Vercel is a cloud platform that provides a serverless deployment platform for frontend developers...",
-    title: "How to deploy website on vercel?",
-    src: "/blogs/vercel.jpg",
-    ctaText: "Visit",
-    ctaLink: "https://medium.com/@amankohare/how-to-deploy-website-on-vercel-da6c54a184d6",
-    content: () => {
-      return (
-        <p>
-          Metallica, an iconic American heavy metal band, is renowned for their
-          powerful sound and intense performances that resonate deeply with
-          their audience. Formed in Los Angeles, California, they have become a
-          cultural icon in the heavy metal music industry. <br /> <br /> Their
-          songs often reflect themes of aggression, social issues, and personal
-          struggles, capturing the essence of the heavy metal genre. With a
-          career spanning over four decades, Metallica has released numerous hit
-          albums and singles that have garnered them a massive fan following
-          both in the United States and abroad.
-        </p>
-      );
-    },
-  },
-  {
-    description: "Becoming a successful web developer involves a combination of technical skills, continuous learning...",
-    title: "How To Become Successful Web developer",
-    src: "/blogs/developer.webp",
-    ctaText: "Visit",
-    ctaLink: "https://medium.com/@amankohare/how-to-become-successful-web-developer-f44874874e23",
-    content: () => {
-      return (
-        <p>
-          Himesh Reshammiya, a renowned Indian music composer, singer, and
-          actor, is celebrated for his distinctive voice and innovative
-          compositions. Born in Mumbai, India, he has become a prominent figure
-          in the Bollywood music industry. <br /> <br /> His songs often feature
-          a blend of contemporary and traditional Indian music, capturing the
-          essence of modern Bollywood soundtracks. With a career spanning over
-          two decades, Himesh Reshammiya has released numerous hit albums and
-          singles that have garnered him a massive fan following both in India
-          and abroad.
-        </p>
-      );
-    },
-  },
-];
