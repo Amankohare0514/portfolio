@@ -9,7 +9,6 @@ const Blogs = () => {
         <h1 className="text-xl mt-8  md:text-3xl font-bold text-center mb-6 bg-clip-text text-transparent bg-gradient-to-b from-sky-500 to-sky-600 bg-opacity-50">
           Blogs
         </h1>
-       
         <Blog />
       </div>
     </>

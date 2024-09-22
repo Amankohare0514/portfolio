@@ -23,7 +23,7 @@ export const HoverEffect = ({
     return (
         <div
             className={cn(
-                "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 py-10",
+                "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 py-6",
                 className
             )}
         >
@@ -36,7 +36,7 @@ export const HoverEffect = ({
                     <AnimatePresence>
                         {hoveredIndex === idx && (
                             <motion.span
-                                className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-gray-900/[0.8] block rounded-3xl"
+                                className="absolute inset-0 h-full w-full  bg-neutral-100 dark:bg-gray-900/[0.8] block rounded-3xl"
                                 layoutId="hoverBackground"
                                 initial={{ opacity: 0 }}
                                 animate={{
@@ -50,12 +50,12 @@ export const HoverEffect = ({
                             />
                         )}
                     </AnimatePresence>
-                    <Card>
+                    <Card className="border">
                         <CardMedia>
                             <img
                                 src={item.image}
                                 alt={item.title}
-                                className="object-contain border  w-full h-44 md:h-60 rounded-lg"
+                                className="object-contain border  w-full h-full rounded-lg"
                             />
                         </CardMedia>
                         <CardTitle>{item.title}</CardTitle>
@@ -86,7 +86,7 @@ export const Card = ({
     return (
         <div
             className={cn(
-                "rounded-2xl h-full w-full p-4 overflow-hidden bg-transparent border group-hover:border-slate-700 relative z-20",
+                "rounded-2xl h-full w-full p-4 overflow-hidden bg-transparent group-hover:border-slate-400 dark:group-hover:border-slate-600 relative z-20",
                 className
             )}
         >

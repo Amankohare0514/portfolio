@@ -6,7 +6,7 @@ const Blog = () => {
     <div>
 <div className="grid mt-6 md:p-0 p-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 mx-auto max-w-[800px]">
   {BlogData.map((item, index) => (
-    <div key={index} className="max-w-sm p-4 border rounded-xl overflow-hidden  transition-transform duration-300 hover:scale-95">
+    <div key={index} className="max-w-sm p-4 border hover:bg-slate-100 dark:hover:bg-gray-900 rounded-xl overflow-hidden ">
       <img className="w-full" src={item.image} alt="blog image" />
       <div className="py-4">
         <div className="font-bold text-xl mb-2">{item.title}</div>
