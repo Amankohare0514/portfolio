@@ -102,12 +102,11 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
-  // Twitter Card Meta Tags
   twitter: {
     card: "summary_large_image",
     title: "Aman Kohare",
     description: "Welcome to Aman Kohare's personal website.",
-    images: ["/icon/logo.png"],
+    images: ["/icons/logo.png"],
   },
 };
 

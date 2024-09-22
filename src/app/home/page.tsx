@@ -27,7 +27,7 @@ function Hero() {
         <div className="circleposition bg-[#902db4] rounded-[100%] absolute top-[50%] left-[50%] translate-x-[-50%]  translate-y-[-120%] blur-[120px] h-[300px] w-[200px]"></div>
         <div className="circleposition bg-[#ee8340] rounded-[100%] absolute  top-[50%] left-[65%] translate-x-[-50%]  translate-y-[-50%] blur-[100px] h-[300px] w-[100px]"></div>
         <p className="text-neutral-600 dark:text-neutral-200 text-xl sm:text-3xl  ">
-          Mern stack developer in India.
+          Web developer in India.
         </p>
         <TypewriterEffectSmooth words={words} />
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">
