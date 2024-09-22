@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   icons: [
     {
       rel: "apple-touch-icon",
-      url: "/icon/logo.png",
+      url: "/icons/logo.png",
     },
     {
       rel: "icon",
@@ -85,7 +85,6 @@ export const metadata: Metadata = {
   authors: [{ name: "Aman Kohare", url: "https://helloaman.vercel.app/" }],
   robots: "index, follow",
   viewport: "width=device-width, initial-scale=1",
-  // Open Graph Meta Tags for better social media sharing
   openGraph: {
     title: "Aman Kohare",
     description: "Welcome to Aman Kohare's personal website.",
@@ -93,7 +92,7 @@ export const metadata: Metadata = {
     siteName: "Aman Kohare",
     images: [
       {
-        url: "/icon/logo.png",
+        url: "/icons/logo.png",
         width: 1200,
         height: 630,
         alt: "Aman Kohare",

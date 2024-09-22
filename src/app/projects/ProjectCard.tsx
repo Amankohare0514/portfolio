@@ -5,7 +5,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 const ProjectCard = ({ title, description, githubLink , liveLink }: any) => {
   return (
-    <div className="flex flex-col mt-3 justify-between p-4 bg-transparent border shadow-md rounded-lg md:h-[100px] h-[140px] max-w-[800px] hover:bg-gray-100 dark:hover:bg-gray-950">
+    <div className="flex flex-col mt-3 justify-between p-4 bg-transparent border shadow-md rounded-lg md:h-[100px] h-[140px] max-w-[800px] hover:bg-gray-100 dark:hover:bg-gray-900">
       <div className="flex justify-between">
         <div>
           <h3 className="text-xl font-semibold mb-2">{title}</h3>
