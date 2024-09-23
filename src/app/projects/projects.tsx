@@ -1,12 +1,5 @@
 const AllProjects = [
   {
-    title: 'Techloom Solutions Pvt. Ltd',
-    description: 'Elevate Your Online Presence with Techloom Solutions',
-    link: "https://techloomsolutions.tech/",
-    image: "/images/techloom.png",
-    githubLink: "https://github.com/Amankohare0514",
-  },
-  {
     title: 'SyntaxShare',
     description: 'Share your coding journey, collaborate with others, and gain insights from developers.',
     link: "https://syntax-share-frontend.vercel.app/",
@@ -26,6 +19,13 @@ const AllProjects = [
     link: "https://my-tube-new.vercel.app/",
     image: "/images/mytube.png",
     githubLink: "https://github.com/Amankohare0514/my_tube",
+  },
+  {
+    title: 'Techloom Solutions Pvt. Ltd',
+    description: 'Elevate Your Online Presence with Techloom Solutions',
+    link: "https://techloomsolutions.tech/",
+    image: "/images/techloom.png",
+    githubLink: "https://github.com/Amankohare0514",
   },
   {
     title: 'Github Finder',
@@ -50,7 +50,7 @@ const AllProjects = [
   },
   {
     title: 'Portfolio',
-    description: 'My old portfolio which is build in next.js which show my experince and skills..',
+    description: 'My latest Portfolio done in next.js and tailwind which show my creavity in frontend also show my experience. ',
     link: "https://quiz-app-flax-theta.vercel.app/",
     image: "/images/portfolio.png",
     githubLink: "https://github.com/Amankohare0514/Next.js-Portfolio",
