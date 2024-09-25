@@ -1,8 +1,14 @@
-#personal portfolio 
+# Aman's Portfolio
 
- [live](http://helloaman.vercel.app)
+Welcome to my portfolio! This repository showcases my skills, projects, and experience.
 
-## Getting Started
+## 🚀 Features
+
+- **Interactive Projects**: Explore my latest projects developed using Next.js and tailwind.
+- **Skills Highlight**: Discover my proficiency in JavaScript, TypeScript, and UI/UX design.
+- **Experience**: Learn about my journey, internship, and current role.
+
+
 
 First, run the development server:
 
