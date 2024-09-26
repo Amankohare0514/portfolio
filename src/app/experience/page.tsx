@@ -5,6 +5,31 @@ import { Timeline } from "@/components/ui/timeline";
 function Experience() {
     const data = [
         {
+            title: "[Sep 2024 - present]",
+            content: (
+                <div>
+                    <p className="text-neutral-800 dark:text-neutral-200 text-xl font-bold md:text-2xl mb-2">
+                        Nexocide Private Limited
+                    </p>
+                    <p className="text-neutral-800 dark:text-neutral-200 text-xl font-semibold md:text-2xl mb-2">
+                        web developer - remote
+                    </p>
+                    <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-2">
+                        Led the end-to-end development of a responsive website with HTML, CSS, JavaScript and js framework react next.js, boosting responsiveness by 25%.
+                    </p>
+                    <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-2">
+                        Significantly enhanced a dynamic web app using next.js, showcasing expertise in creating interactive and user-centric interfaces.
+                    </p>
+                    <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-2">
+                        Demonstrated outstanding projectmanagement skills, consistentlymeeting timelines and exceeding client expectations.
+                    </p>
+                    <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-2">
+                        Developed and maintained interactive user interfaces using React.js, enhancing user engagement and satisfaction.
+                    </p>
+                </div>
+            ),
+        },
+        {
             title: "[Aug 2024 - Sep 2024]",
             content: (
                 <div>
