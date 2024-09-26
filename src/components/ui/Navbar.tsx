@@ -70,7 +70,7 @@ const Navbar = () => {
     <nav
       ref={touchRef}
       className={`${isScrolled && "bg-opacity-[0.5] shadow-md drop-shadow-lg"
-        } font-medium duration-500 bg-opacity-50 transition-all linear z-40  dark:text-white w-[75%] md:w-[70%] lg:w-[55%] xl:w-[50%]  max-w-6xl  mx-auto bg-gray-50 dark:bg-[#35353579] ${open && "dark:bg-[#000] bg-opacity-100"
+        } font-medium duration-500 bg-opacity-50 transition-all linear z-40  dark:text-white w-[90%] md:w-[75%] lg:w-[60%] xl:w-[55%]  max-w-6xl  mx-auto bg-gray-50 dark:bg-[#35353579] ${open && "dark:bg-[#000] bg-opacity-100"
         } drop-shadow-xs backdrop-blur-sm top-4 sticky rounded-2xl `}
     >
       <div className="flex justify-between md:space-x-10 lg:space-x-12 md:flex items-center place-items-center md:justify-center py-3 md:px-10 px-8">

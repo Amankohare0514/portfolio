@@ -74,7 +74,7 @@ function About() {
       <h1 className="text-xl mt-8  md:text-3xl font-bold text-center mb-6 bg-clip-text text-transparent bg-gradient-to-b from-sky-500 to-sky-600 bg-opacity-50">
         About
       </h1>
-      <div className="min-h-screen bg-transparent  px-8 sm:px-10 lg:px-8">
+      <div className="min-h-screen bg-transparent px-8 sm:px-10 lg:px-8">
         <div className="max-w-[800px] mx-auto">
           <div className="bg-transparentg mt-6  overflow-hidden">
             <div className="flex flex-col item-center">

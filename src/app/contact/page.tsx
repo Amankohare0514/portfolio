@@ -42,22 +42,12 @@ const Contact = () => {
 
   return (
     <>
-      <h1 className="text-xl mt-8  md:text-3xl font-bold text-center mb-6 bg-clip-text text-transparent bg-gradient-to-b from-sky-500 to-sky-600 bg-opacity-50">
+      <h1 className="text-xl mt-8  md:text-3xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-sky-500 to-sky-600 bg-opacity-50">
         Contact
       </h1>
-      <div className="p-4 mt-8 max-w-[800px]  mx-auto relative w-full">
-
-        <div className="max-w-[800px] mt-6 h-[110px] p-6 border rounded-lg flex items-center">
-          <div className="flex-grow mt-4">
-            <h2 className="text-2xl font-semibold mb-2 ">Email: amankohare@gmail.com</h2>
-            <p className="mb-4">Phone: +91 6268518514</p>
-          </div>
-
-        </div>
-
-        <form onSubmit={handleSubmit} className="max-w-[800px] mx-auto mt-8">
+      <div className="p-4  max-w-[800px]  mx-auto relative w-full">
+        <form onSubmit={handleSubmit} className="max-w-[800px] mx-auto">
           <div className="mb-4 w-full">
-            <label htmlFor="name" className="block mb-2 text-sm font-semibold">Name</label>
             <input
               type="text"
               id="name"
@@ -70,7 +60,6 @@ const Contact = () => {
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="email" className="block mb-2 text-sm font-semibold">Email</label>
             <input
               type="email"
               id="email"
@@ -83,7 +72,6 @@ const Contact = () => {
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="message" className="block mb-2 text-sm font-semibold">Message</label>
             <textarea
               id="message"
               name="message"
