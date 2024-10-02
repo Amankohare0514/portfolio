@@ -2,15 +2,14 @@ import React from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Spotlight } from "@/components/ui/Spotlight";
-import skills from "./SkillData";
-
+import skills from "./SkillData"; // Ensure skills is properly imported and is an array
 
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.1, 
+      staggerChildren: 0.1,
     },
   },
 };
@@ -21,6 +20,8 @@ const itemVariants = {
 };
 
 function Skill() {
+  const skillList = Array.isArray(skills) ? skills : [];
+
   return (
     <motion.div
       initial="hidden"
@@ -34,11 +35,8 @@ function Skill() {
           Skill
         </h1>
         <div className="mx-auto mt-4 w-full">
-          <motion.div
-            className="flex flex-wrap justify-start"
-            variants={containerVariants}
-          >
-            {skills.map((skill, index) => (
+          <motion.div className="flex flex-wrap justify-start" variants={containerVariants}>
+            {skillList.map((skill, index) => (
               <motion.button
                 key={index}
                 variants={itemVariants}
