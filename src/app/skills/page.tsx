@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Spotlight } from "@/components/ui/Spotlight";
-import skills from "./SkillData"; // Ensure skills is properly imported and is an array
+import SkillsData from "./SkillData";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -20,7 +20,7 @@ const itemVariants = {
 };
 
 function Skill() {
-  const skillList = Array.isArray(skills) ? skills : [];
+  const skillList = Array.isArray(SkillsData) ? SkillsData : [];
 
   return (
     <motion.div
