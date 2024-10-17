@@ -19,26 +19,41 @@ const useFluidCursor = () => {
       BACK_COLOR: { r: 0.5, g: 0, b: 0 },
       TRANSPARENT: true,
     };
-    function pointerPrototype() {
-      this.id = -1;
-      this.texcoordX = 0;
-      this.texcoordY = 0;
-      this.prevTexcoordX = 0;
-      this.prevTexcoordY = 0;
-      this.deltaX = 0;
-      this.deltaY = 0;
-      this.down = false;
-      this.moved = false;
-      this.color = [0, 0, 0];
-    }
-    let pointers = [];
-    pointers.push(new pointerPrototype());
+    class Pointer {
+        id: number;
+        texcoordX: number;
+        texcoordY: number;
+        prevTexcoordX: number;
+        prevTexcoordY: number;
+        deltaX: number;
+        deltaY: number;
+        down: boolean;
+        moved: boolean;
+        color: [number, number, number];
+      
+        constructor() {
+          this.id = -1;
+          this.texcoordX = 0;
+          this.texcoordY = 0;
+          this.prevTexcoordX = 0;
+          this.prevTexcoordY = 0;
+          this.deltaX = 0;
+          this.deltaY = 0;
+          this.down = false;
+          this.moved = false;
+          this.color = [0, 0, 0];
+        }
+      }
+      
+      let pointers: Pointer[] = [];
+      pointers.push(new Pointer());
+      
     const { gl, ext } = getWebGLContext(canvas);
     if (!ext.supportLinearFiltering) {
       config.DYE_RESOLUTION = 256;
       config.SHADING = false;
     }
-    function getWebGLContext(canvas) {
+    function getWebGLContext(canvas:any) {
       const params = {
         alpha: true,
         depth: false,
