@@ -2,22 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes fluidPulse {
-  0%, 100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  50% {
-    transform: scale(1.1);
-    opacity: 0.85;
-  }
-}
-
-.cursor-pulse {
-  animation: fluidPulse 3s ease-in-out infinite;
-}
-
-
 
 
 @layer base {
