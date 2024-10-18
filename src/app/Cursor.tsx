@@ -11,13 +11,13 @@ interface CursorProps {
   trailCount?: number
 }
 
-function Cursor({
+const Cursor = ({
   baseColor = '#3b82f6',
   accentColor = '#f472b6',
   size = 20,
   ringSize = 40,
-  trailCount = 5
-}: CursorProps) {
+  trailCount = 5,
+}: CursorProps) => {
   const cursorX = useMotionValue(0)
   const cursorY = useMotionValue(0)
   const springConfig = { damping: 25, stiffness: 700 }
@@ -34,7 +34,9 @@ function Cursor({
   }, [cursorX, cursorY])
 
   const updatePointerStatus = useCallback((e: MouseEvent) => {
-    setIsPointer(window.getComputedStyle(e.target as Element).cursor === 'pointer')
+    if (typeof window !== 'undefined') {  // Check if window is available
+      setIsPointer(window.getComputedStyle(e.target as Element).cursor === 'pointer')
+    }
   }, [])
 
   const handleClick = useCallback((e: MouseEvent) => {
@@ -44,6 +46,8 @@ function Cursor({
   }, [])
 
   useEffect(() => {
+    if (typeof window === 'undefined') return; // Ensure it only runs on the client
+
     window.addEventListener('mousemove', updateCursor)
     window.addEventListener('mouseover', updatePointerStatus)
     window.addEventListener('mousedown', handleClick)
@@ -68,6 +72,8 @@ function Cursor({
   const colorMix = useTransform(
     [cursorXSpring, cursorYSpring],
     ([latestX, latestY]) => {
+      if (typeof window === 'undefined') return baseColor; // Avoid window access on the server
+
       const distanceFromCenter = Math.sqrt(
         Math.pow((latestX as number) - window.innerWidth / 2, 2) +
         Math.pow((latestY as number) - window.innerHeight / 2, 2)
