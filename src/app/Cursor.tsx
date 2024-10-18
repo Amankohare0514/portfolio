@@ -1,100 +1,85 @@
 'use client'
 
-import React, { useState, useEffect, useCallback } from 'react'
-import { motion, useAnimation, useMotionValue, AnimatePresence } from 'framer-motion'
+import React, { useState, useEffect, useCallback, useMemo } from 'react'
+import { motion, useSpring, useMotionValue, useTransform, AnimatePresence } from 'framer-motion'
 
 interface CursorProps {
-  primaryColor?: string
-  secondaryColor?: string
-  glowColor?: string
+  baseColor?: string
+  accentColor?: string
   size?: number
+  ringSize?: number
+  trailCount?: number
 }
 
- function Cursor({
-  primaryColor = '#3b82f6',
-  secondaryColor = '#60a5fa',
-  glowColor = 'rgba(59, 130, 246, 0.5)',
+function Cursor({
+  baseColor = '#3b82f6',
+  accentColor = '#f472b6',
   size = 20,
+  ringSize = 40,
+  trailCount = 5
 }: CursorProps) {
   const cursorX = useMotionValue(0)
   const cursorY = useMotionValue(0)
-  const [isHovering, setIsHovering] = useState(false)
-  const [isClicking, setIsClicking] = useState(false)
+  const springConfig = { damping: 25, stiffness: 700 }
+  const cursorXSpring = useSpring(cursorX, springConfig)
+  const cursorYSpring = useSpring(cursorY, springConfig)
+
   const [isPointer, setIsPointer] = useState(false)
-  const cursorControls = useAnimation()
-  const rippleControls = useAnimation()
+  const [isClicking, setIsClicking] = useState(false)
+  const [lastClick, setLastClick] = useState({ x: 0, y: 0 })
 
   const updateCursor = useCallback((e: MouseEvent) => {
     cursorX.set(e.clientX)
     cursorY.set(e.clientY)
   }, [cursorX, cursorY])
 
-  const magneticEffect = useCallback((element: Element) => {
-    const rect = element.getBoundingClientRect()
-    const centerX = rect.left + rect.width / 2
-    const centerY = rect.top + rect.height / 2
-    const distance = Math.sqrt(
-      Math.pow(centerX - cursorX.get(), 2) + Math.pow(centerY - cursorY.get(), 2)
-    )
+  const updatePointerStatus = useCallback((e: MouseEvent) => {
+    setIsPointer(window.getComputedStyle(e.target as Element).cursor === 'pointer')
+  }, [])
 
-    if (distance < 100) {
-      const angle = Math.atan2(centerY - cursorY.get(), centerX - cursorX.get())
-      const force = (100 - distance) / 3
-      cursorX.set(cursorX.get() + Math.cos(angle) * force)
-      cursorY.set(cursorY.get() + Math.sin(angle) * force)
-    }
-  }, [cursorX, cursorY])
+  const handleClick = useCallback((e: MouseEvent) => {
+    setIsClicking(true)
+    setLastClick({ x: e.clientX, y: e.clientY })
+    setTimeout(() => setIsClicking(false), 300)
+  }, [])
 
   useEffect(() => {
     window.addEventListener('mousemove', updateCursor)
-
-    const handleMouseEnter = (e: MouseEvent) => {
-      setIsHovering(true)
-      setIsPointer(getComputedStyle(e.target as Element).cursor === 'pointer')
-    }
-    const handleMouseLeave = () => {
-      setIsHovering(false)
-      setIsPointer(false)
-    }
-    const handleMouseDown = () => setIsClicking(true)
-    const handleMouseUp = () => setIsClicking(false)
-
-    const interactiveElements = document.querySelectorAll('a, button, [role="button"], input, select, textarea')
-    interactiveElements.forEach((el) => {
-      el.addEventListener('mouseenter', handleMouseEnter)
-      el.addEventListener('mouseleave', handleMouseLeave)
-      el.addEventListener('mousemove', () => magneticEffect(el))
-    })
-
-    window.addEventListener('mousedown', handleMouseDown)
-    window.addEventListener('mouseup', handleMouseUp)
+    window.addEventListener('mouseover', updatePointerStatus)
+    window.addEventListener('mousedown', handleClick)
+    window.addEventListener('mouseup', () => setIsClicking(false))
 
     return () => {
       window.removeEventListener('mousemove', updateCursor)
-      interactiveElements.forEach((el) => {
-        el.removeEventListener('mouseenter', handleMouseEnter)
-        el.removeEventListener('mouseleave', handleMouseLeave)
-        el.removeEventListener('mousemove', () => magneticEffect(el))
-      })
-      window.removeEventListener('mousedown', handleMouseDown)
-      window.removeEventListener('mouseup', handleMouseUp)
+      window.removeEventListener('mouseover', updatePointerStatus)
+      window.removeEventListener('mousedown', handleClick)
+      window.removeEventListener('mouseup', () => setIsClicking(false))
     }
-  }, [updateCursor, magneticEffect])
+  }, [updateCursor, updatePointerStatus, handleClick])
 
-  useEffect(() => {
-    cursorControls.start({
-      scale: isHovering ? 1.5 : isClicking ? 0.8 : 1,
-      transition: { type: 'spring', stiffness: 300, damping: 20 }
+  const trails = useMemo(() => {
+    return [...Array(trailCount)].map((_, i) => {
+      const trailSize = size * (1 - (i / trailCount) * 0.5)
+      const trailOpacity = 0.5 - (i / trailCount) * 0.4
+      return { size: trailSize, opacity: trailOpacity }
     })
+  }, [size, trailCount])
 
-    if (isClicking) {
-      rippleControls.start({
-        scale: [0, 3],
-        opacity: [0.5, 0],
-        transition: { duration: 0.5 }
-      })
+  const colorMix = useTransform(
+    [cursorXSpring, cursorYSpring],
+    ([latestX, latestY]) => {
+      const distanceFromCenter = Math.sqrt(
+        Math.pow(latestX - window.innerWidth / 2, 2) +
+        Math.pow(latestY - window.innerHeight / 2, 2)
+      )
+      const maxDistance = Math.sqrt(
+        Math.pow(window.innerWidth / 2, 2) +
+        Math.pow(window.innerHeight / 2, 2)
+      )
+      const ratio = distanceFromCenter / maxDistance
+      return `linear-gradient(${ratio * 360}deg, ${baseColor}, ${accentColor})`
     }
-  }, [isHovering, isClicking, cursorControls, rippleControls])
+  )
 
   return (
     <>
@@ -106,76 +91,69 @@ interface CursorProps {
           cursor: text;
         }
       `}</style>
-      <motion.div
-        className="fixed top-0 left-0 pointer-events-none z-50 mix-blend-difference"
-        style={{
-          x: cursorX,
-          y: cursorY,
-          width: size,
-          height: size,
-        }}
-        animate={cursorControls}
-      >
+      {trails.map((trail, index) => (
         <motion.div
-          className="absolute inset-0 rounded-full"
+          key={index}
+          className="fixed top-0 left-0 rounded-full pointer-events-none z-50 mix-blend-difference"
           style={{
-            backgroundColor: primaryColor,
-            boxShadow: `0 0 20px 2px ${glowColor}`,
-          }}
-        />
-        {isPointer && (
-          <motion.div
-            className="absolute inset-0 rounded-full border-2"
-            style={{ borderColor: secondaryColor }}
-            initial={{ scale: 0 }}
-            animate={{ scale: 1.5 }}
-            transition={{ type: 'spring', stiffness: 300, damping: 10 }}
-          />
-        )}
-      </motion.div>
-      <AnimatePresence>
-        {isClicking && (
-          <motion.div
-            className="fixed top-0 left-0 rounded-full pointer-events-none z-40"
-            style={{
-              x: cursorX,
-              y: cursorY,
-              width: size * 2,
-              height: size * 2,
-              backgroundColor: secondaryColor,
-              marginLeft: -size / 2,
-              marginTop: -size / 2,
-            }}
-            initial={{ scale: 0, opacity: 0.5 }}
-            animate={rippleControls}
-            exit={{ opacity: 0 }}
-          />
-        )}
-      </AnimatePresence>
-      {[...Array(5)].map((_, i) => (
-        <motion.div
-          key={i}
-          className="fixed top-0 left-0 rounded-full pointer-events-none z-40"
-          style={{
-            x: cursorX,
-            y: cursorY,
-            width: size * (1 - i * 0.2),
-            height: size * (1 - i * 0.2),
-            backgroundColor: secondaryColor,
-            opacity: 0.2 - i * 0.04,
-          }}
-          animate={{
-            x: cursorX,
-            y: cursorY,
-            transition: {
-              type: 'spring',
-              stiffness: 500 - i * 100,
-              damping: 25 - i * 5,
-              mass: 0.5,
-            },
+            x: cursorXSpring,
+            y: cursorYSpring,
+            width: trail.size,
+            height: trail.size,
+            opacity: trail.opacity,
+            background: colorMix,
+            transition: `width 0.2s, height 0.2s, opacity 0.2s`,
           }}
         />
       ))}
+      <motion.div
+        className="fixed top-0 left-0 rounded-full pointer-events-none z-50 mix-blend-difference"
+        style={{
+          x: cursorXSpring,
+          y: cursorYSpring,
+          width: size,
+          height: size,
+          background: colorMix,
+          boxShadow: `0 0 10px ${baseColor}, 0 0 20px ${accentColor}`,
+          scale: isClicking ? 0.8 : 1,
+          transition: 'width 0.2s, height 0.2s, opacity 0.2s, scale 0.1s',
+        }}
+      />
+      {isPointer && (
+        <motion.div
+          className="fixed top-0 left-0 rounded-full border-2 pointer-events-none z-40 mix-blend-difference"
+          style={{
+            x: cursorXSpring,
+            y: cursorYSpring,
+            width: ringSize,
+            height: ringSize,
+            borderColor: accentColor,
+            opacity: 0.5,
+            scale: isClicking ? 0.9 : 1,
+            transition: 'width 0.2s, height 0.2s, opacity 0.2s, scale 0.1s',
+          }}
+        />
+      )}
+      <AnimatePresence>
+        {isClicking && (
+          <motion.div
+            className="fixed rounded-full pointer-events-none z-40"
+            style={{
+              x: lastClick.x - ringSize / 2,
+              y: lastClick.y - ringSize / 2,
+              width: ringSize,
+              height: ringSize,
+              borderColor: accentColor,
+              borderWidth: 2,
+              opacity: 0,
+            }}
+            initial={{ scale: 0, opacity: 0.5 }}
+            animate={{ scale: 2, opacity: 0 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.5 }}
+          />
+        )}
+      </AnimatePresence>
     </>
   )
 }
