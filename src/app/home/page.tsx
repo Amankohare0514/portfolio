@@ -41,7 +41,7 @@ export default function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
-                <h1 className="text-4xl lg:text-5xl font-bold text-gray-700 dark:text-gray-300 mb-4">Aman Kohare</h1>
+                <h1 className="text-4xl lg:text-5xl font-bold text-gray-700 dark:text-gray-100 mb-4">Aman Kohare</h1>
               </motion.div>
 
               <motion.div
