@@ -69,8 +69,8 @@ function Cursor({
     [cursorXSpring, cursorYSpring],
     ([latestX, latestY]) => {
       const distanceFromCenter = Math.sqrt(
-        Math.pow(latestX - window.innerWidth / 2, 2) +
-        Math.pow(latestY - window.innerHeight / 2, 2)
+        Math.pow((latestX as number) - window.innerWidth / 2, 2) +
+        Math.pow((latestY as number) - window.innerHeight / 2, 2)
       )
       const maxDistance = Math.sqrt(
         Math.pow(window.innerWidth / 2, 2) +
