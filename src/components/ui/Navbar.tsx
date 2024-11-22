@@ -76,8 +76,8 @@ const Navbar = () => {
       <div className="flex justify-between md:space-x-10 lg:space-x-12 md:flex items-center place-items-center md:justify-center py-3 md:px-10 px-8">
         <div className="select-none order-2 md:order-1 cursor-pointer flex items-center text-gray-800">
           <div className="cursor-pointer flex items-center">
-            <Link href="/" className="flex items-center space-x-2">
-              <img src="/aman1.jpg" alt="Logo" className="h-7 rounded-full" />
+            <Link href="/" className="flex items-center space-x-1">
+              <img src="/icons/logo.png" alt="Logo" className="h-6 rounded-full" />
               <span className="text-md font-bold dark:text-gray-200 text-gray-700">Aman</span>
             </Link>
           </div>

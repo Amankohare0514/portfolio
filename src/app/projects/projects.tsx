@@ -51,7 +51,7 @@ const AllProjects = [
   {
     title: 'Portfolio',
     description: 'My latest Portfolio done in next.js and tailwind which show my creavity in frontend also show my experience. ',
-    link: "https://quiz-app-flax-theta.vercel.app/",
+    link: "https://next-js-portfolio-mu-gold.vercel.app/",
     image: "/images/portfolio.png",
     githubLink: "https://github.com/Amankohare0514/Next.js-Portfolio",
   },
