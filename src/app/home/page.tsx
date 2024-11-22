@@ -6,7 +6,7 @@ import { Github, Instagram, Linkedin, Twitter } from 'lucide-react'
 
 export default function Hero() {
   const [typedText, setTypedText] = useState('')
-  const fullText = "Bringing ideas to life through code"
+  const fullText = "Bringing ideas to life through code."
 
   useEffect(() => {
     let i = 0
@@ -88,7 +88,7 @@ export default function Hero() {
               className="w-full lg:w-1/2 p-8 flex justify-center lg:justify-end"
             >
               <motion.div
-                animate={{ y: [0, -10, 0] }}
+                animate={{ y: [0, 0, 0] }}
                 transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
                 className="relative w-64 h-64 lg:w-80 lg:h-80"
               >
@@ -97,7 +97,7 @@ export default function Hero() {
                   alt="John Doe"
                   layout="fill"
                   objectFit="cover"
-                  className="rounded-full border-4 border-gray-300 dark:border-gray-700"
+                  className="rounded-full border-1"
                 />
               </motion.div>
             </motion.div>
