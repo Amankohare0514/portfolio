@@ -31,11 +31,16 @@ function Skill() {
       className="mt-6 w-full rounded-md flex md:items-center md:justify-center antialiased bg-grid-white/[0.02] relative overflow-hidden"
     >
       <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="white" />
-      <div className="p-4 max-w-[800px] mx-auto relative w-full">
-        <h1 className="text-xl md:text-3xl font-bold text-start bg-clip-text text-transparent bg-gradient-to-b from-sky-500 to-sky-600 bg-opacity-50">
-          Skill
-        </h1>
-        <div className="mx-auto mt-4 w-full">
+      <div className="max-w-[800px] mx-auto relative w-full">
+        <div className="max-w-[800px] mx-auto py-6 md:py-10 px-4">
+          <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-3xl">
+            Skills
+          </h2>
+          <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
+            Equipped with the best tools to craft extraordinary code.
+          </p>
+        </div>
+        <div className="mx-auto p-4 mt-4 w-full">
           <motion.div className="flex flex-wrap justify-start" variants={containerVariants}>
             {skillList.map((skill, index) => (
               <motion.button

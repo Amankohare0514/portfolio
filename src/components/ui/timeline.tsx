@@ -37,12 +37,12 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       className="w-full bg-transparent font-sans md:px-10"
       ref={containerRef}
     >
-      <div className="max-w-[800px] mx-auto py-6 md:py-20 px-8 md:px-8 lg:px-10">
+      <div className="max-w-[800px] mx-auto py-6 md:py-10 px-4">
         <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-3xl">
-        Work Experience
+          Work Experience
         </h2>
         <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
-        Front-end specialist crafting visually appealing, responsive user interfaces.
+          Front-end specialist crafting visually appealing, responsive user interfaces.
         </p>
       </div>
 
