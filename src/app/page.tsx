@@ -13,8 +13,8 @@ export default function Home() {
         <Toaster />
         <Hero />
         <Skill />
-        <Experience />
         <Gears />
+        <Experience />
       </NextUIProvider>
     </>
   );
