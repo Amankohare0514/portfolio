@@ -77,7 +77,7 @@ const Navbar = () => {
         <div className="select-none order-2 md:order-1 cursor-pointer flex items-center text-gray-800">
           <div className="cursor-pointer flex items-center">
             <Link href="/" className="flex items-center space-x-1">
-              <img src="/icons/logo.png" alt="Logo" className="h-6 rounded-full" />
+              <img src="/icons/logo.png" alt="Logo" className="h-7 rounded-full" />
               <span className="text-md font-bold dark:text-gray-200 text-gray-700">Aman</span>
             </Link>
           </div>
