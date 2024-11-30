@@ -24,15 +24,13 @@ export default function Hero() {
 
   return (
     <>
-      {/* <div className="circleposition bg-[#902db4] rounded-[100%] absolute top-[50%] left-[50%] translate-x-[-50%]  translate-y-[-120%] blur-[120px] h-[400px] w-[250px]"></div>
-      <div className="circleposition bg-[#ee8340] rounded-[100%] absolute  top-[50%] left-[60%] translate-x-[-60%]  translate-y-[-50%] blur-[120px] h-[450px] w-[180px]"></div> */}
-      <div className="min-h-[600px] mt-16 md:mt-0 lg:mt-0 flex items-center justify-center relative overflow-hidden p-4">
+      <div className="min-h-[600px] mt-16 md:mt-14 lg:mt-0 flex items-center justify-center relative overflow-hidden p-4">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox=%220 0 32 32%22%3E%3Cpath fill=%22%23fff%22 d=%22M0 4c0-2.2 1.8-4 4-4h24c2.2 0 4 1.8 4 4v24c0 2.2-1.8 4-4 4h-24c-2.2 0-4-1.8-4-4v-24z%22%2F%3E%3C%2Fsvg%3E')] bg-[length:64px_64px] opacity-10 animate-[move-background_20s_linear_infinite]"></div>
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="z-10 max-w-[800px] w-full bg-transparent backdrop-blur-md rounded-xl overflow-hidden"
+          className="z-10 max-w-[760px] w-full bg-transparent backdrop-blur-md rounded-xl overflow-hidden"
         >
           <div className="flex flex-col lg:flex-row items-center">
             <div className="w-full lg:w-1/2 p-4">
@@ -42,7 +40,7 @@ export default function Hero() {
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
                 <h1 className="text-3xl lg:text-4xl font-semibold text-gray-700 dark:text-gray-100 mb-4">
-                Keep calm, I make <span className='font-bold text-sky-500'> websites work.</span></h1>
+                  Keep calm, I make <span className='font-bold text-sky-500'> websites work.</span></h1>
               </motion.div>
 
               <motion.div
@@ -83,7 +81,7 @@ export default function Hero() {
               <motion.div
                 animate={{ y: [0, 0, 0] }}
                 transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
-                className="relative w-64 h-64 lg:w-80 lg:h-80"
+                className="relative w-60 h-60 lg:w-72 lg:h-72"
               >
                 <Image
                   src="/aman.jpg"
