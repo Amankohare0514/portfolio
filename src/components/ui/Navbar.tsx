@@ -77,7 +77,7 @@ const Navbar = () => {
         <div className="select-none order-2 md:order-1 cursor-pointer flex items-center text-gray-800">
           <div className="cursor-pointer flex items-center">
             <Link href="/" className="flex items-center space-x-1">
-              <img src="/icons/logo.png" alt="Logo" className="h-7 rounded-full" />
+              <img src="/icons/logo.png" alt="Logo" className="h-8 rounded-full" />
               <span className="text-md font-bold dark:text-gray-200 text-gray-700">Aman</span>
             </Link>
           </div>
@@ -122,7 +122,7 @@ const Navbar = () => {
         </div>
 
         <ul
-          className={`rounded-3xl md:rounded-none  ${open ? "dark:bg-[#000]" : "dark:bg-[#35353500]"
+          className={`rounded-3xl md:rounded-none  ${open ? "dark:bg-[#111]" : "dark:bg-[#35353500]"
             } bg-white  py-4 md:py-0  md:bg-inherit font-semibold order-4 md:flex md:items-center md:pb-0 pb-8 absolute md:static  md:bg-none md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-9 pl-9 lg:transition-none transition-all duration-500 ease-in ${open ? "top-[3.5rem] " : "top-[-490px]"
             } `}
         >
