@@ -3,6 +3,8 @@ import { useState } from 'react';
 import emailjs from 'emailjs-com';
 import { toast } from 'sonner';
 import { motion } from "framer-motion";
+import { Mail, Phone, MapPin } from 'lucide-react';
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -27,7 +29,7 @@ const Contact = () => {
         e.target,
         'c0lf2uMPzW6yI9Fwh'
       );
-      toast.success('message send successfully');
+      toast.success('Message sent successfully');
 
       setFormData({
         name: '',
@@ -39,7 +41,6 @@ const Contact = () => {
       toast.error('Error submitting form');
     }
   };
-
 
   return (
     <>
@@ -76,45 +77,63 @@ const Contact = () => {
           />
         </motion.div>
       </section>
-      <div className="p-4  max-w-[800px]  mx-auto relative w-full">
-        <form onSubmit={handleSubmit} className="max-w-[800px] mx-auto">
-          <div className="mb-4 w-full">
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder='Name'
-              value={formData.name}
-              onChange={handleChange}
-              className="w-full px-4 py-2 bg-transparent rounded-md border focus:outline-none focus:border-blue-500"
-              required
-            />
+      <div className="max-w-[800px] mx-auto flex flex-col md:flex-row items-center md:items-start justify-between p-4">
+        <div className="w-full md:w-1/2 mb-6 md:mb-0 text-center md:text-left space-y-4">
+          <div className="flex items-center justify-center md:justify-start space-x-2">
+            <Mail className="w-5 h-5 text-gray-900 dark:text-white" />
+            <span className="text-gray-600 dark:text-gray-300">amankohare@gmail.com</span>
           </div>
-          <div className="mb-4">
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder='Email'
-              value={formData.email}
-              onChange={handleChange}
-              className="w-full px-4 py-2 bg-transparent rounded-md border focus:outline-none focus:border-blue-500"
-              required
-            />
+          <div className="flex items-center justify-center md:justify-start space-x-2">
+            <Phone className="w-5 h-5 text-gray-900 dark:text-white" />
+            <span className="text-gray-600 dark:text-gray-300">+91 6268518514</span>
           </div>
-          <div className="mb-4">
-            <textarea
-              id="message"
-              name="message"
-              placeholder='Message'
-              value={formData.message}
-              onChange={handleChange}
-              className="w-full px-4 py-2 bg-transparent rounded-md border focus:outline-none focus:border-blue-500"
-              required
-            ></textarea>
+          <div className="flex items-center justify-center md:justify-start space-x-2">
+            <MapPin className="w-5 h-5 text-gray-900 dark:text-white" />
+            <span className="text-gray-600 dark:text-gray-300">Vijay Nagae, Indore, India, 452012</span>
           </div>
-          <button type="submit" className="bg-gray-900 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-300">Send Message</button>
-        </form>
+        </div>
+        <div className="w-full md:w-1/2">
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <div className="">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name"
+                value={formData.name}
+                onChange={handleChange}
+                className="w-full px-4 py-2 bg-transparent rounded-md border focus:outline-none focus:border-blue-500"
+                required
+              />
+            </div>
+            <div className="">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                value={formData.email}
+                onChange={handleChange}
+                className="w-full px-4 py-2 bg-transparent rounded-md border focus:outline-none focus:border-blue-500"
+                required
+              />
+            </div>
+            <div className="">
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Message"
+                value={formData.message}
+                onChange={handleChange}
+                className="w-full px-4 py-2 bg-transparent rounded-md border focus:outline-none focus:border-blue-500"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" className="bg-gray-900 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-300">
+              Send Message
+            </button>
+          </form>
+        </div>
       </div>
     </>
   );
