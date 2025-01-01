@@ -19,21 +19,21 @@ export default function Footer() {
             <a href="/resume.pdf" download className="text-gray-900 justify-center hover:text-gray-500 hover:dark:text-gray-200 dark:text-gray-300"> My resume</a>
           </div>
           <div className="flex flex-col  space-y-2">
-            <a className="text-gray-900 justify-center hover:text-gray-500 hover:dark:text-gray-200 dark:text-gray-300" href="https://github.com/Amankohare0514">
+            <a target='_blank' className="text-gray-900  justify-center hover:text-gray-500 hover:dark:text-gray-200 dark:text-gray-300" href="https://github.com/Amankohare0514">
               Github
             </a>
-            <a className="text-gray-900 justify-center hover:text-gray-500 hover:dark:text-gray-200 dark:text-gray-300" href="https://www.instagram.com/aman__0514/">
+            <a target='_blank' className="text-gray-900 justify-center hover:text-gray-500 hover:dark:text-gray-200 dark:text-gray-300" href="https://www.instagram.com/aman__0514/">
               Instagram
             </a>
-            <a className="text-gray-900 justify-center hover:text-gray-500 hover:dark:text-gray-200 dark:text-gray-300" href="https://twitter.com/Aman__0514">
+            <a target='_blank' className="text-gray-900 justify-center hover:text-gray-500 hover:dark:text-gray-200 dark:text-gray-300" href="https://twitter.com/Aman__0514">
               Twitter
             </a>
-            <a className="text-gray-900 justify-center hover:text-gray-500 hover:dark:text-gray-200 dark:text-gray-300" href="https://www.linkedin.com/in/aman-kohare-3a0678235/">
+            <a target='_blank' className="text-gray-900 justify-center hover:text-gray-500 hover:dark:text-gray-200 dark:text-gray-300" href="https://www.linkedin.com/in/aman-kohare-3a0678235/">
               Linkedin
             </a>
           </div>
         </div>
-        <div className="circleposition bg-[#902db4] rounded-[100%] absolute  left-[50%] translate-x-[-90%]  translate-y-[0%] blur-[70px] h-[90px] w-[350px]"></div>
+        <div className="circleposition bg-[#902db4] rounded-[100%] absolute  left-[50%] translate-x-[-80%]  translate-y-[0%] blur-[70px] h-[90px] w-[350px]"></div>
         <div className="circleposition bg-[#ee8340] rounded-[100%] absolute   left-[60%] translate-x-[-40%]  translate-y-[0%] blur-[70px] h-[90px] w-[200px]"></div>
         <div className="flex justify-between items-center border-t  py-4 mt-4">
           <span className="text-gray-900 dark:text-gray-200">© 2024 aman kohare</span>
