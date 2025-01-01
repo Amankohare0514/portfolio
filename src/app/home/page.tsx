@@ -6,7 +6,7 @@ import { Github, Instagram, Linkedin, Twitter } from 'lucide-react'
 
 export default function Hero() {
   const [typedText, setTypedText] = useState('')
-  const fullText = "Hello! I'm Aman, a passionate web developer and designer with over 1 year of experience in creating beautiful, functional websites. I specialize in React, Next.js, and Tailwind CSS."
+  const fullText = "Hello! I'm Aman, a passionate web developer and designer with over 1 year of experience in creating beautiful, functional websites."
 
   useEffect(() => {
     let i = 0
