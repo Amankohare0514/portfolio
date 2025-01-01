@@ -1,8 +1,8 @@
 "use client"
 const Cards = [
   {
-    description: "Welcome to the next chapter in web development with Next.js! With every iteration...",
-    title: "Introducing Next.js: Unveiling Exciting New Features",
+    description: "Welcome to the next chapter in web development with Next.js! With every...",
+    title: "Introducing Next.js Unveiling Exciting New Features",
     src: "/blogs/next.png",
     ctaText: "Visit",
     ctaLink: "https://medium.com/@amankohare/introducing-next-js-unveiling-exciting-new-features-374bb4830b83",
@@ -42,7 +42,7 @@ const Cards = [
 
   {
     description: "Vercel is a cloud platform that provides a serverless deployment platform for frontend developers...",
-    title: "How to deploy website on vercel?",
+    title: "How to deploy your website on vercel?",
     src: "/blogs/vercel.jpg",
     ctaText: "Visit",
     ctaLink: "https://medium.com/@amankohare/how-to-deploy-website-on-vercel-da6c54a184d6",
@@ -60,7 +60,7 @@ const Cards = [
   },
   {
     description: "Becoming a successful web developer involves a combination of technical skills, continuous learning...",
-    title: "How To Become Successful Web developer",
+    title: "How To Become Successful Web developer?",
     src: "/blogs/developer.webp",
     ctaText: "Visit",
     ctaLink: "https://medium.com/@amankohare/how-to-become-successful-web-developer-f44874874e23",
