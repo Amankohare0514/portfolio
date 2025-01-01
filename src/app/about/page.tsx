@@ -39,7 +39,7 @@ function About() {
       </motion.div>
     </section>
       <div className="min-h-screen bg-transparent px-8 sm:px-10 lg:px-8">
-        <div className="max-w-[800px] mx-auto">
+        <div className="max-w-[760px] mx-auto">
           <div className="bg-transparentg mt-6  overflow-hidden">
             <div className="flex flex-col item-center">
               {/* Image Section */}
