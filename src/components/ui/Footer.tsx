@@ -16,7 +16,7 @@ export default function Footer() {
             <a href="/blogs" className="text-gray-900 hover:text-gray-500 hover:dark:text-gray-200 dark:text-gray-300"> Blog</a>
             <a href="/skills" className="text-gray-900 justify-center hover:text-gray-500 hover:dark:text-gray-200 dark:text-gray-300"> Skills</a>
             <a href="/contact" className="text-gray-900 justify-center hover:text-gray-500 hover:dark:text-gray-200 dark:text-gray-300">  Contact</a>
-            <a href="/resume.pdf" download className="text-gray-900 justify-center hover:text-gray-500 hover:dark:text-gray-200 dark:text-gray-300"> My resume</a>
+            <a href="/resume" className="text-gray-900 justify-center hover:text-gray-500 hover:dark:text-gray-200 dark:text-gray-300"> My resume</a>
           </div>
           <div className="flex flex-col  space-y-2">
             <a target='_blank' className="text-gray-900  justify-center hover:text-gray-500 hover:dark:text-gray-200 dark:text-gray-300" href="https://github.com/Amankohare0514">
