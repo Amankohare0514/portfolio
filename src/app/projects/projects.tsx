@@ -1,5 +1,12 @@
 const AllProjects = [
   {
+    title: 'Sidebar Portfolio',
+    description: 'creating sidebar portfolio using next.js and shadcn for showcase skills and projects',
+    link: "https://amankohare-seven.vercel.app/",
+    image: "/images/port.png",
+    githubLink: "https://github.com/Amankohare0514/SideBar-Portfolio"
+  },
+  {
     title: 'SyntaxShare',
     description: 'Share your coding journey, collaborate with others, and gain insights from developers.',
     link: "https://syntax-share-frontend.vercel.app/",

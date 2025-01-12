@@ -62,10 +62,10 @@ export const HoverEffect = ({
                         <CardTitle>{item.title}</CardTitle>
                         <CardDescription>{item.description}</CardDescription>
                         <div className="flex justify-between">
-                            <Link href={item.githubLink}>
+                            <Link   target="_blank" href={item.githubLink}>
                                 <IconBrandGithub className="mt-4" />
                             </Link>
-                            <Link href={item.link}>
+                            <Link   target="_blank" href={item.link}>
                                 <IconExternalLink className="mt-4" />
                             </Link>
                         </div>
