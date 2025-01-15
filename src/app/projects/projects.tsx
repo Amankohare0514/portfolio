@@ -1,17 +1,24 @@
 const AllProjects = [
   {
+    title: 'LoomStay',
+    description: 'LoomStay - Staying or living somewhere a real e state startup',
+    link: "https://delicate-macaron-7cae2b.netlify.app/",
+    image: "/images/loomstay.png",
+    githubLink: "https://github.com/Amankohare0514/LoomStay"
+  },
+  {
     title: 'Sidebar Portfolio',
-    description: 'creating sidebar portfolio using next.js and shadcn for showcase skills and projects',
+    description: 'Creating sidebar portfolio using next.js and shadcn for showcase skills and projects',
     link: "https://amankohare-seven.vercel.app/",
     image: "/images/port.png",
     githubLink: "https://github.com/Amankohare0514/SideBar-Portfolio"
   },
   {
-    title: 'SyntaxShare',
-    description: 'Share your coding journey, collaborate with others, and gain insights from developers.',
-    link: "https://syntax-share-frontend.vercel.app/",
-    image: "/images/share.png",
-    githubLink: "https://github.com/Amankohare0514/SyntaxShare-frontend"
+    title: 'Techloom Solutions Pvt. Ltd',
+    description: 'Elevate Your Online Presence with Techloom Solutions',
+    link: "https://techloomsolutions.tech/",
+    image: "/images/techloom.png",
+    githubLink: "https://github.com/Amankohare0514",
   },
   {
     title: 'Reform',
@@ -21,18 +28,18 @@ const AllProjects = [
     githubLink: "https://github.com/Amankohare0514/YourForm",
   },
   {
+    title: 'SyntaxShare',
+    description: 'Share your coding journey, collaborate with others, and gain insights from developers.',
+    link: "https://syntax-share-frontend.vercel.app/",
+    image: "/images/share.png",
+    githubLink: "https://github.com/Amankohare0514/SyntaxShare-frontend"
+  },
+  {
     title: 'My Tube',
     description: 'Led the development of My_tube, an innovative YouTube clone.',
     link: "https://my-tube-new.vercel.app/",
     image: "/images/mytube.png",
     githubLink: "https://github.com/Amankohare0514/my_tube",
-  },
-  {
-    title: 'Techloom Solutions Pvt. Ltd',
-    description: 'Elevate Your Online Presence with Techloom Solutions',
-    link: "https://techloomsolutions.tech/",
-    image: "/images/techloom.png",
-    githubLink: "https://github.com/Amankohare0514",
   },
   {
     title: 'Github Finder',
