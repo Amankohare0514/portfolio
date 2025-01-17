@@ -43,7 +43,7 @@ export default function Footer() {
         <div className="circleposition bg-[#902db4] rounded-[100%] absolute  left-[50%] translate-x-[-80%]  translate-y-[0%] blur-[70px] h-[90px] w-[350px]"></div>
         <div className="circleposition bg-[#ee8340] rounded-[100%] absolute   left-[60%] translate-x-[-40%]  translate-y-[0%] blur-[70px] h-[90px] w-[200px]"></div>
         <div className="flex justify-between items-center border-t  py-4 mt-4">
-          <span className="text-gray-900 dark:text-gray-200">© 2024 aman kohare</span>
+          <span className="text-gray-900 dark:text-gray-200">© 2025 aman kohare</span>
         </div>
       </div>
     </footer>
