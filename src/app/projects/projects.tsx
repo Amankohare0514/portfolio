@@ -1,11 +1,11 @@
 const AllProjects = [
-  {
-    title: 'LoomStay',
-    description: 'LoomStay - Staying or living somewhere a real e state startup',
-    link: "https://delicate-macaron-7cae2b.netlify.app/",
-    image: "/images/loomstay.png",
-    githubLink: "https://github.com/Amankohare0514/LoomStay"
-  },
+  // {
+  //   title: 'LoomStay',
+  //   description: 'LoomStay - Staying or living somewhere a real e state startup',
+  //   link: "https://delicate-macaron-7cae2b.netlify.app/",
+  //   image: "/images/loomstay.png",
+  //   githubLink: "https://github.com/Amankohare0514/LoomStay"
+  // },
   {
     title: 'Sidebar Portfolio',
     description: 'Creating sidebar portfolio using next.js and shadcn for showcase skills and projects',
