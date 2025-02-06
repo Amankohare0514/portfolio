@@ -89,7 +89,7 @@ const Contact = () => {
           </div>
           <div className="flex items-center justify-center md:justify-start space-x-2">
             <MapPin className="w-5 h-5 text-gray-900 dark:text-white" />
-            <span className="text-gray-600 dark:text-gray-300">Vijay Nagae, Indore, India, 452012</span>
+            <span className="text-gray-600 dark:text-gray-300">Vijay Nagar, Indore, India, 452012</span>
           </div>
         </div>
         <div className="w-full md:w-1/2">
