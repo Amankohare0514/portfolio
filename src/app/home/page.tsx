@@ -30,7 +30,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="z-10 max-w-[760px] w-full bg-transparent backdrop-blur-md rounded-xl overflow-hidden"
+          className="z-10 max-w-[760px] w-full rounded-xl overflow-hidden"
         >
           <div className="flex flex-col lg:flex-row items-center">
             <div className="w-full lg:w-1/2 p-4">

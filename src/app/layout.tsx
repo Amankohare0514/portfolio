@@ -4,7 +4,8 @@ import { Inter } from "next/font/google";
 import Navbar from "@/components/ui/Navbar";
 import Footer from "@/components/ui/Footer";
 import { ThemeProvider } from "@/components/theme-provider"
-// import Cursor from "./Cursor";
+import CanvasCursor from "@/components/ui/cursor";
+
 
 
 
@@ -68,7 +69,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {/* <Cursor /> */}
+        <CanvasCursor />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
