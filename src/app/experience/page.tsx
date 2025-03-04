@@ -73,31 +73,6 @@ function Experience() {
                 </div>
             ),
         },
-        {
-            title: "[Nov 2023 - Jan 2024]",
-            content: (
-                <div>
-                    <p className="text-neutral-800 dark:text-neutral-200 text-xl font-bold md:text-2xl mb-2">
-                        SalesQueen Software solution
-                    </p>
-                    <p className="text-neutral-800 dark:text-neutral-200 text-xl font-semibold md:text-2xl mb-2">
-                        Frontend developer - remote
-                    </p>
-                    <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-2">
-                        Led the end-to-end development of a responsive website withHTML, CSS, and JavaScript, boosting responsiveness by 25%.
-                    </p>
-                    <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-2">
-                        Significantly enhanced a dynamic web app using React.js, showcasing expertise in creating interactive and user-centric interfaces.
-                    </p>
-                    <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-2">
-                        Demonstrated outstanding projectmanagement skills, consistentlymeeting timelines and exceeding client expectations.
-                    </p>
-                    <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-2">
-                        Developed and maintained interactive user interfaces using React.js, enhancing user engagement and satisfaction.
-                    </p>
-                </div>
-            ),
-        },
     ];
     return (
         <div className="w-full">
