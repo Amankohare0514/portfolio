@@ -59,7 +59,7 @@ function Experience() {
                         NextOpson.in
                     </p>
                     <p className="text-neutral-800 dark:text-neutral-200 text-xl font-semibold md:text-2xl mb-2">
-                        Frontend developer - Bhopal, india
+                        Frontend developer - Bhopal
                     </p>
                     <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-2">
                         Developed and Implemented Marketing Strategies: Spearheaded innovative marketing campaigns, resulting in a 30% increase in customer acquisition within the first quarter.
