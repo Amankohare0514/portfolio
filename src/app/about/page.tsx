@@ -83,19 +83,19 @@ function About() {
                   When not coding, I enjoy watching TV shows and movies, playing games with friends, or hanging out. I'm also constantly listening to music. According to Spotify Wrapped, I listened to 989 minutes of music in 2023 and 3047 in 2022. I also have a keen interest in playing cricket.
                 </p>
                 <div className="mt-8 flex  space-x-4">
-                  <a href="https://github.com/Amankohare0514" className="text-gray-600 dark:text-gray-200 hover:text-indigo-500 transition-colors duration-300">
+                  <a target="_blank" href="https://github.com/Amankohare0514" className="text-gray-600 dark:text-gray-200 hover:text-indigo-500 transition-colors duration-300">
                     <span className="sr-only">GitHub</span>
                     <Github className="h-6 w-6" />
                   </a>
-                  <a href="https://www.linkedin.com/in/aman-kohare-3a0678235/" className="text-gray-600 dark:text-gray-200 hover:text-indigo-500 transition-colors duration-300">
+                  <a  target="_blank" href="https://www.linkedin.com/in/aman-kohare-3a0678235/" className="text-gray-600 dark:text-gray-200 hover:text-indigo-500 transition-colors duration-300">
                     <span className="sr-only">LinkedIn</span>
                     <Linkedin className="h-6 w-6" />
                   </a>
-                  <a href="https://www.instagram.com/aman__0514/" className="text-gray-600 dark:text-gray-200 hover:text-indigo-500 transition-colors duration-300">
+                  <a  target="_blank" href="https://www.instagram.com/aman__0514/" className="text-gray-600 dark:text-gray-200 hover:text-indigo-500 transition-colors duration-300">
                     <span className="sr-only">Instagram</span>
                     <Instagram className="h-6 w-6" />
                   </a>
-                  <a href="mailto:amankohare@gmail.com" className="text-gray-600 dark:text-gray-200 hover:text-indigo-500 transition-colors duration-300">
+                  <a  target="_blank" href="mailto:amankohare@gmail.com" className="text-gray-600 dark:text-gray-200 hover:text-indigo-500 transition-colors duration-300">
                     <span className="sr-only">Email</span>
                     <Mail className="h-6 w-6" />
                   </a>
