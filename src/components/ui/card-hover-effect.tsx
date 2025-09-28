@@ -59,7 +59,7 @@ export const HoverEffect = ({
                                 className="object-contain border w-full h-full rounded-lg"
                             />
                         </CardMedia>
-                        <CardTitle>{item.title}</CardTitle>
+                        <CardTitle className="uppercase">{item.title}</CardTitle>
                         <CardDescription>{item.description}</CardDescription>
                         <div className="flex justify-between">
                             <Link   target="_blank" href={item.githubLink}>
