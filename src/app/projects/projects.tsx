@@ -1,17 +1,31 @@
 const AllProjects = [
-  // {
-  //   title: 'LoomStay',
-  //   description: 'LoomStay - Staying or living somewhere a real e state startup',
-  //   link: "https://delicate-macaron-7cae2b.netlify.app/",
-  //   image: "/images/loomstay.png",
-  //   githubLink: "https://github.com/Amankohare0514/LoomStay"
-  // },
   {
-    title: 'Sidebar Portfolio',
-    description: 'Creating sidebar portfolio using next.js and shadcn for showcase skills and projects',
-    link: "https://amankohare-seven.vercel.app/",
-    image: "/images/port.png",
-    githubLink: "https://github.com/Amankohare0514/SideBar-Portfolio"
+    title: 'The Cura',
+    description: 'The Cura Wellness Company, a brand of Peoples Healthcare Systems, is a next-generation digital diagnostics......',
+    link: "https://www.thecura.co/",
+    image: "/images/cura.png",
+    githubLink: "https://github.com/piyushyadav0191/the-cura"
+  },
+  {
+    title: 'Apex Executive Education',
+    description: 'Apex Executive Education (Apex ExEd) operates as an independent guidance and facilitation platform. ',
+    link: "https://www.apexexed.com/",
+    image: "/images/apex.png",
+    githubLink: "https://github.com/piyushyadav0191/college-finder"
+  },
+  {
+    title: 'BrickMake Realty',
+    description: 'Were revolutionizing the real estate industry by connecting buyers, sellers, and renters through innovative technology and exceptional service. ',
+    link: "https://www.brickmakerealty.com/",
+    image: "/images/brick.png",
+    githubLink: "https://github.com/piyushyadav0191/brickmakerealty-real-estate"
+  },
+  {
+    title: 'SHISHYA',
+    description: 'SHISHYA is a modern ERP platform built for teachers, coaching institutes, and tuition classes.',
+    link: "https://www.shishya.world/",
+    image: "/images/shishya.png",
+    githubLink: "https://github.com/Amankohare0514/shishya_web"
   },
   {
     title: 'Techloom Solutions Pvt. Ltd',

@@ -62,7 +62,7 @@ function About() {
                 <div className="flex flex-wrap  gap-4 text-sm text-gray-400 dark:text-gray-200">
                   <div className="flex items-start ">
                     <Briefcase className="h-5 w-5 mr-2 text-indigo-500" />
-                    1+ Years Experience
+                    2+ Years Experience
                   </div>
                   <div className="flex items-start">
                     <MapPin className="h-5 w-5 mr-2 text-indigo-500" />
@@ -70,11 +70,11 @@ function About() {
                   </div>
                   <div className="flex items-start">
                     <Calendar className="h-5 w-5 mr-2 text-indigo-500" />
-                    Available for Freelance
+                     Freelance Project
                   </div>
                 </div>
                 <p className="mt-6 text-gray-600 dark:text-gray-200 leading-relaxed">
-                  Hello! I'm Aman, a passionate web developer and designer with over 1 year of experience in creating beautiful, functional websites. I specialize in React, Next.js, and Tailwind CSS, and I love bringing ideas to life through code.
+                  Hello! I'm Aman, a passionate web developer and designer with over 2+ year of experience in creating beautiful, functional websites. I specialize in React, Next.js, and Tailwind CSS, and I love bringing ideas to life through code.
                 </p>
                 <p className="mt-4 text-gray-600 dark:text-gray-200 leading-relaxed">
                   I completed my Bachelor of Technology (B.Tech) in Information Technology from Barkatullah University, Bhopal. Programming Journey: I'm a self-taught programmer on a quest to explore the exciting world of technology.
