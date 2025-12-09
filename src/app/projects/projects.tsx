@@ -21,6 +21,14 @@ const AllProjects = [
     githubLink: "https://github.com/piyushyadav0191/brickmakerealty-real-estate"
   },
   {
+  title: 'Zaktis IT Solutions',
+  description:
+    'Established on 21st December 2021, ZAKTIS IT SOLUTIONS empowers businesses with innovative digital solutions tailored for growth. With a commitment to value-driven technology services, Zaktis delivers end-to-end IT solutions that help organizations succeed in an ever-evolving digital landscape.',
+  link: 'https://www.zaktis.com/',
+  image: '/images/zaktis.png',
+  githubLink: ''
+},
+  {
     title: 'SHISHYA',
     description: 'SHISHYA is a modern ERP platform built for teachers, coaching institutes, and tuition classes.',
     link: "https://www.shishya.world/",
