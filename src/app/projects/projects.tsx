@@ -23,7 +23,7 @@ const AllProjects = [
   {
   title: 'Zaktis IT Solutions',
   description:
-    'Established on 21st December 2021, ZAKTIS IT SOLUTIONS empowers businesses with innovative digital solutions tailored for growth. With a commitment to value-driven technology services, Zaktis delivers end-to-end IT solutions that help organizations succeed in an ever-evolving digital landscape.',
+    'Established on 21st December 2021, ZAKTIS IT SOLUTIONS empowers businesses with innovative digital solutions tailored for growth.',
   link: 'https://www.zaktis.com/',
   image: '/images/zaktis.png',
   githubLink: ''
