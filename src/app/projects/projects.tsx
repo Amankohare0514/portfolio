@@ -13,6 +13,13 @@ const AllProjects = [
     image: "/images/apex.png",
     githubLink: "https://github.com/piyushyadav0191/college-finder"
   },
+    {
+    title: 'Karthika graphicx',
+    description: 'With over 15 years of experience in digital transformation, Sarah founded Karthika graphicx with a mission to bridge ... ',
+    link: "https://karthikagraphicx.com/",
+    image: "/images/karthika.png",
+    githubLink: "https://github.com/piyushyadav0191/bms-client"
+  },
   {
     title: 'BrickMake Realty',
     description: 'Were revolutionizing the real estate industry by connecting buyers, sellers, and renters through innovative technology and exceptional service. ',
@@ -26,7 +33,7 @@ const AllProjects = [
     'Established on 21st December 2021, ZAKTIS IT SOLUTIONS empowers businesses with innovative digital solutions tailored for growth.',
   link: 'https://www.zaktis.com/',
   image: '/images/zaktis.png',
-  githubLink: ''
+  githubLink: 'https://github.com/Amankohare0514/Zaktis-it-solution'
 },
   {
     title: 'SHISHYA',
